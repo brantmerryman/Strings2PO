@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Strings2PO' target in the 'Strings2PO' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

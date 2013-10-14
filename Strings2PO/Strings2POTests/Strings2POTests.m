@@ -8,6 +8,11 @@
 
 #import "Strings2POTests.h"
 
+#import "NSString+CommentAware.h"
+
+
+NSString * kTestString = @" /* Class = \"NSPanel\"; title = \"Connection Log\"; ObjectID = \"5\"; */ \"5.title\" = \"Connection Log\"; /* Class = \"NSButtonCell\"; title = \"Copy To Clipboard\"; ObjectID = \"29\"; */ \"29.title\" = \"Copy To Clipboard\"; /* Class = \"NSButtonCell\"; title = \"Email To Support\"; ObjectID = \"59\"; */ \"59.title\" = \"Email To Support\";";
+
 @implementation Strings2POTests
 
 - (void)setUp
@@ -24,9 +29,25 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCommentsRanges
 {
-    STFail(@"Unit tests are not implemented yet in Strings2POTests");
+    NSArray * commentRanges = [kTestString commentsRanges];
+
+    
+    for (id rng in commentRanges) {
+        NSAssert([rng isKindOfClass:[NSDictionary class]], @"Invalid type.");
+        NSRange commentRange = [(NSDictionary *)rng rangeFromDictionary];
+        NSLog(@"%@", [kTestString substringWithRange: commentRange]);
+    }
+}
+
+- (void)testStringCommentsAware
+{
+    NSArray * comps = [kTestString componentsSeparatedByStringNotCommentedOut:@";"];
+    
+    for (id comp in comps) {
+        NSLog(@"%@", [comp description]);
+    }
 }
 
 @end

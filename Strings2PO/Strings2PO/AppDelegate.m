@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "NSString+CommentAware.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     stringFiles = [NSMutableArray arrayWithCapacity:100];
+    
+    [self addObserver:self forKeyPath:@"busy" options:0 context:nil];
+    
 }
 
 
@@ -80,10 +84,210 @@
         if (1 != rc) { return; }
         
         // process and save
-        NSLog(@"Process and save");
+        
+        
+        [NSThread detachNewThreadSelector:@selector(generatePO:) toTarget:self withObject:sp.URL];
         
     }];
     
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"busy"]) {
+        if (self.busy) {
+            [progressIndicator startAnimation:nil];
+        } else {
+            [progressIndicator stopAnimation:nil];
+        }
+    }
+}
+
+- (void)generatePO:(id)context
+{
+    @autoreleasepool {
+        self.busy = YES;
+        
+        if (![context isKindOfClass:[NSURL class]]) {
+            NSLog(@"Error: destination URL not specified.");
+            return;
+        }
+        
+        NSMutableDictionary * encodings = [[NSMutableDictionary alloc] initWithCapacity:stringFiles.count];
+        
+        NSMutableArray * ma = [NSMutableArray arrayWithCapacity:5000];
+        
+        NSUInteger neededCapacity = 0;
+        
+        for (NSString * filePath in stringFiles) {
+            
+            NSError * err = nil;
+            NSStringEncoding theEncoding;
+            NSString * contents = [NSString stringWithContentsOfFile:filePath usedEncoding:&theEncoding error:&err];
+            if (err) {
+                NSLog(@"%@", [err description]);
+                continue;
+            }
+            
+            neededCapacity += contents.length;
+            
+            NSNumber * nEncoding = [NSNumber numberWithUnsignedInteger:theEncoding];
+            
+            NSNumber * count = [encodings objectForKey:nEncoding];
+            if (![count isKindOfClass:[NSNumber class]]) {
+                count = @0;
+            }
+            
+            [encodings setObject:[NSNumber numberWithUnsignedInteger:[count unsignedIntegerValue] + 1 ] forKey:nEncoding];
+
+            
+            // process a file.
+            NSArray * stringRecords = [contents componentsSeparatedByStringNotCommentedOut:@";"];
+            
+            for (NSString * record in stringRecords) {
+                NSString * rec2 = [record copy];
+                // now break it into three things: context, key, and value.
+                
+                // get context
+                NSString * context = @"";
+                NSRange r2 = NSMakeRange(0, 0);
+                NSRange r1 = [rec2 rangeOfString:@"/*"];
+                if (NSNotFound != r1.location) {
+                    r2 = [rec2 rangeOfString:@"*/"];
+                    if (NSNotFound != r2.location) {
+                        NSRange contextRange = NSMakeRange(r1.location + r1.length, r2.location - (r1.location + r1.length));
+                        context = [rec2 substringWithRange:contextRange];
+                    }
+                }
+                
+                // get key
+                NSMutableString * key = [NSMutableString stringWithCapacity:rec2.length];
+                BOOL outside = YES;
+                BOOL ignoreQuote = NO;
+                NSUInteger i = r2.location + r2.length;
+                for (; i < rec2.length; ++i) {
+                    switch ([rec2 characterAtIndex:i]) {
+                        case '\\':
+                            ignoreQuote = YES;
+                            [key appendString:[rec2 substringWithRange:NSMakeRange(i, 1)]];
+                            break;
+                        case '\"':
+                            if (!ignoreQuote) {
+                                if (outside) {
+                                    outside = NO;
+                                    // start looking for key.
+                                } else {
+                                     // key done.
+                                    rec2 = [rec2 substringFromIndex:i+1];
+                                    i = rec2.length;
+                                }
+                                break;
+                            } else {
+                                ignoreQuote = NO;
+                            }
+                        default:
+                            if (!outside) {
+                                [key appendString:[rec2 substringWithRange:NSMakeRange(i, 1)]];
+                            }
+                            break;
+                            
+                    }
+                }
+                
+                
+                
+                // get value
+                NSMutableString * value = [NSMutableString stringWithCapacity:rec2.length];
+                ignoreQuote = NO;
+                outside = YES;
+                for (i = 0; i < rec2.length; ++i) {
+                    switch ([rec2 characterAtIndex:i]) {
+                        case '\\':
+                            ignoreQuote = YES;
+                            [value appendString:[rec2 substringWithRange:NSMakeRange(i, 1)]];
+                            break;
+                        case '\"':
+                            if (!ignoreQuote) {
+                                if (outside) {
+                                    outside = NO;
+                                    // start looking for key.
+                                } else {
+                                    // key done.
+                                    i = rec2.length;
+                                }
+                                break;
+                            } else {
+                                ignoreQuote = NO;
+                            }
+                        default:
+                            if (!outside) {
+                                [value appendString:[rec2 substringWithRange:NSMakeRange(i, 1)]];
+                            }
+                            
+                            break;
+                            
+                    }
+                }
+                
+                
+
+             
+                [ma addObject:@{ @"context" : context, @"key" : key, @"value" : value }];
+            }
+            
+
+        }
+        
+        
+        
+//        NSLog(@"%@", [ma description]);
+        /*
+        // determine the most used encoding.
+        NSStringEncoding enc;
+        NSUInteger popular = 0;
+        for (NSNumber * theEncoding in [encodings allKeys]) {
+            NSNumber * ncount = [encodings objectForKey:theEncoding];
+            if ([ncount unsignedIntegerValue] > popular) {
+                popular = [ncount unsignedIntegerValue];
+                enc = [theEncoding unsignedIntegerValue];
+            }
+        }
+         */
+        
+        if (ma.count > 0) {
+        
+            NSMutableString * outputString = [NSMutableString stringWithCapacity:neededCapacity];
+            
+            // now output the PO file.
+            
+            NSDateFormatter * df = [[NSDateFormatter alloc] init];
+            [df setDateStyle:NSDateFormatterMediumStyle];
+            [df setTimeStyle:NSDateFormatterMediumStyle];
+            
+            [outputString appendFormat:@"#File created %@\n\n", [df stringFromDate:[NSDate date]]];
+            
+
+            for (NSDictionary * dict in ma) {
+                NSString * context = [dict objectForKey:@"context"];
+                NSString * key = [dict objectForKey:@"key"];
+                NSString * value = [dict objectForKey:@"value"];
+                
+                [outputString appendFormat:@"#Context %@\n", context];
+                [outputString appendFormat:@"msgid \"%@\"\n", key];
+                [outputString appendFormat:@"msgstr \"%@\"\n\n", value];
+            }
+            
+            NSError * err = nil;
+            if (![outputString writeToURL:(NSURL *)context atomically:YES encoding:NSUTF8StringEncoding error:&err]) {
+                NSLog(@"Failed to write file.");
+            }
+            if (err) {
+                NSLog(@"%@", [err description]);
+            }
+        }
+        
+        self.busy = NO;
+    }
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
@@ -133,7 +337,6 @@
             
                 // add it to the list.
                 @synchronized (stringFiles) {
-                    NSLog(@"%@", filePath);
                     [stringFiles addObject: filePath];
                 }
             }

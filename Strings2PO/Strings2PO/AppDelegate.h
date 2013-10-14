@@ -18,7 +18,8 @@
     NSMutableArray * stringFiles;
  
     IBOutlet NSTableView * stringsFilesTable;
-    
+ 
+    IBOutlet NSProgressIndicator * progressIndicator;
 }
 
 - (IBAction)addAction:(id)sender;
@@ -27,5 +28,7 @@
 - (void)processItem:(NSString *)fileFullPath;
 
 @property (assign) IBOutlet NSWindow *window;
+
+@property (assign) BOOL busy;
 
 @end

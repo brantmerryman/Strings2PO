@@ -17,6 +17,8 @@
 		8CB8B8F91808A0D9006BF06E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
 		8CB8B9011808A0D9006BF06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8B8FF1808A0D9006BF06E /* InfoPlist.strings */; };
 		8CB8B9041808A0D9006BF06E /* Strings2POTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8B9031808A0D9006BF06E /* Strings2POTests.m */; };
+		8CC806B0180C79EA00803BC2 /* NSString+CommentAware.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC806AF180C79EA00803BC2 /* NSString+CommentAware.m */; };
+		8CC806B1180C7C4800803BC2 /* NSString+CommentAware.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC806AF180C79EA00803BC2 /* NSString+CommentAware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8CB8B9001808A0D9006BF06E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CB8B9021808A0D9006BF06E /* Strings2POTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings2POTests.h; sourceTree = "<group>"; };
 		8CB8B9031808A0D9006BF06E /* Strings2POTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strings2POTests.m; sourceTree = "<group>"; };
+		8CC806AE180C79EA00803BC2 /* NSString+CommentAware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CommentAware.h"; sourceTree = "<group>"; };
+		8CC806AF180C79EA00803BC2 /* NSString+CommentAware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CommentAware.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				8CB8B8EB1808A0D9006BF06E /* AppDelegate.h */,
 				8CB8B8EC1808A0D9006BF06E /* AppDelegate.m */,
 				8CB8B8EE1808A0D9006BF06E /* MainMenu.xib */,
+				8CC806AE180C79EA00803BC2 /* NSString+CommentAware.h */,
+				8CC806AF180C79EA00803BC2 /* NSString+CommentAware.m */,
 				8CB8B8E01808A0D9006BF06E /* Supporting Files */,
 			);
 			path = Strings2PO;
@@ -263,6 +269,7 @@
 			files = (
 				8CB8B8E61808A0D9006BF06E /* main.m in Sources */,
 				8CB8B8ED1808A0D9006BF06E /* AppDelegate.m in Sources */,
+				8CC806B0180C79EA00803BC2 /* NSString+CommentAware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB8B9041808A0D9006BF06E /* Strings2POTests.m in Sources */,
+				8CC806B1180C7C4800803BC2 /* NSString+CommentAware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +460,7 @@
 				8CB8B9091808A0D9006BF06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB8B90A1808A0D9006BF06E /* Build configuration list for PBXNativeTarget "Strings2POTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +469,7 @@
 				8CB8B90C1808A0D9006BF06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

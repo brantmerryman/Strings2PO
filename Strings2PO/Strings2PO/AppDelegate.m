@@ -240,20 +240,6 @@
         
         
         
-//        NSLog(@"%@", [ma description]);
-        /*
-        // determine the most used encoding.
-        NSStringEncoding enc;
-        NSUInteger popular = 0;
-        for (NSNumber * theEncoding in [encodings allKeys]) {
-            NSNumber * ncount = [encodings objectForKey:theEncoding];
-            if ([ncount unsignedIntegerValue] > popular) {
-                popular = [ncount unsignedIntegerValue];
-                enc = [theEncoding unsignedIntegerValue];
-            }
-        }
-         */
-        
         if (ma.count > 0) {
         
             NSMutableString * outputString = [NSMutableString stringWithCapacity:neededCapacity];
@@ -264,17 +250,25 @@
             [df setDateStyle:NSDateFormatterMediumStyle];
             [df setTimeStyle:NSDateFormatterMediumStyle];
             
-            [outputString appendFormat:@"#File created %@\n\n", [df stringFromDate:[NSDate date]]];
+            [outputString appendFormat:@"# File created %@\n\n", [df stringFromDate:[NSDate date]]];
             
+            NSMutableSet * preventDuplicates = [[NSMutableSet alloc] initWithCapacity:ma.count];
 
             for (NSDictionary * dict in ma) {
                 NSString * context = [dict objectForKey:@"context"];
                 NSString * key = [dict objectForKey:@"key"];
                 NSString * value = [dict objectForKey:@"value"];
                 
-                [outputString appendFormat:@"#Context %@\n", context];
-                [outputString appendFormat:@"msgid \"%@\"\n", key];
-                [outputString appendFormat:@"msgstr \"%@\"\n\n", value];
+                if ([preventDuplicates containsObject:value])
+                    continue;
+                
+                [preventDuplicates addObject:value];
+                
+                [outputString appendFormat:@"# Context %@\n", context];
+                [outputString appendFormat:@"# %@\n", key];
+                
+                [outputString appendFormat:@"msgid \"%@\"\n", value];
+                [outputString appendFormat:@"msgstr \"%@\"\n\n", @""];
             }
             
             NSError * err = nil;

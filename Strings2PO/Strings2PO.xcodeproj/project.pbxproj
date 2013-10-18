@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3ACAEB1811D01A0089739B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
+		8C3ACAF11811D01A0089739B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACAEF1811D01A0089739B /* InfoPlist.strings */; };
+		8C3ACAF31811D01A0089739B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACAF21811D01A0089739B /* main.m */; };
+		8C3ACAF71811D01A0089739B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACAF51811D01A0089739B /* Credits.rtf */; };
+		8C3ACAFA1811D01A0089739B /* PO2StringsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACAF91811D01A0089739B /* PO2StringsDelegate.m */; };
+		8C3ACAFD1811D01A0089739B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACAFB1811D01A0089739B /* MainMenu.xib */; };
+		8C3ACB041811D01B0089739B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8F71808A0D9006BF06E /* SenTestingKit.framework */; };
+		8C3ACB051811D01B0089739B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
+		8C3ACB0D1811D01B0089739B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB0B1811D01B0089739B /* InfoPlist.strings */; };
+		8C3ACB101811D01B0089739B /* PO2StringsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */; };
 		8CB8B8DA1808A0D9006BF06E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
 		8CB8B8E41808A0D9006BF06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E21808A0D9006BF06E /* InfoPlist.strings */; };
 		8CB8B8E61808A0D9006BF06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E51808A0D9006BF06E /* main.m */; };
@@ -22,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8C3ACB061811D01B0089739B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CB8B8CE1808A0D9006BF06E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C3ACAE91811D01A0089739B;
+			remoteInfo = PO2Strings;
+		};
 		8CB8B8FA1808A0D9006BF06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CB8B8CE1808A0D9006BF06E /* Project object */;
@@ -32,6 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C3ACAEA1811D01A0089739B /* PO2Strings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PO2Strings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3ACAEE1811D01A0089739B /* PO2Strings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PO2Strings-Info.plist"; sourceTree = "<group>"; };
+		8C3ACAF01811D01A0089739B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C3ACAF21811D01A0089739B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C3ACAF41811D01A0089739B /* PO2Strings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PO2Strings-Prefix.pch"; sourceTree = "<group>"; };
+		8C3ACAF61811D01A0089739B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8C3ACAF81811D01A0089739B /* PO2StringsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PO2StringsDelegate.h; sourceTree = "<group>"; };
+		8C3ACAF91811D01A0089739B /* PO2StringsDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PO2StringsDelegate.m; sourceTree = "<group>"; };
+		8C3ACAFC1811D01A0089739B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8C3ACB031811D01B0089739B /* PO2StringsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PO2StringsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3ACB0A1811D01B0089739B /* PO2StringsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PO2StringsTests-Info.plist"; sourceTree = "<group>"; };
+		8C3ACB0C1811D01B0089739B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C3ACB0E1811D01B0089739B /* PO2StringsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PO2StringsTests.h; sourceTree = "<group>"; };
+		8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PO2StringsTests.m; sourceTree = "<group>"; };
 		8CB8B8D61808A0D9006BF06E /* Strings2PO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strings2PO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB8B8D91808A0D9006BF06E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8CB8B8DC1808A0D9006BF06E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -56,6 +87,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C3ACAE71811D01A0089739B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACAEB1811D01A0089739B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3ACAFF1811D01B0089739B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACB041811D01B0089739B /* SenTestingKit.framework in Frameworks */,
+				8C3ACB051811D01B0089739B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CB8B8D31808A0D9006BF06E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,11 +124,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C3ACAEC1811D01A0089739B /* PO2Strings */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACAF81811D01A0089739B /* PO2StringsDelegate.h */,
+				8C3ACAF91811D01A0089739B /* PO2StringsDelegate.m */,
+				8C3ACAFB1811D01A0089739B /* MainMenu.xib */,
+				8C3ACAED1811D01A0089739B /* Supporting Files */,
+			);
+			path = PO2Strings;
+			sourceTree = "<group>";
+		};
+		8C3ACAED1811D01A0089739B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACAEE1811D01A0089739B /* PO2Strings-Info.plist */,
+				8C3ACAEF1811D01A0089739B /* InfoPlist.strings */,
+				8C3ACAF21811D01A0089739B /* main.m */,
+				8C3ACAF41811D01A0089739B /* PO2Strings-Prefix.pch */,
+				8C3ACAF51811D01A0089739B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C3ACB081811D01B0089739B /* PO2StringsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACB0E1811D01B0089739B /* PO2StringsTests.h */,
+				8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */,
+				8C3ACB091811D01B0089739B /* Supporting Files */,
+			);
+			path = PO2StringsTests;
+			sourceTree = "<group>";
+		};
+		8C3ACB091811D01B0089739B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACB0A1811D01B0089739B /* PO2StringsTests-Info.plist */,
+				8C3ACB0B1811D01B0089739B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8CB8B8CD1808A0D9006BF06E = {
 			isa = PBXGroup;
 			children = (
 				8CB8B8DF1808A0D9006BF06E /* Strings2PO */,
 				8CB8B8FC1808A0D9006BF06E /* Strings2POTests */,
+				8C3ACAEC1811D01A0089739B /* PO2Strings */,
+				8C3ACB081811D01B0089739B /* PO2StringsTests */,
 				8CB8B8D81808A0D9006BF06E /* Frameworks */,
 				8CB8B8D71808A0D9006BF06E /* Products */,
 			);
@@ -91,6 +183,8 @@
 			children = (
 				8CB8B8D61808A0D9006BF06E /* Strings2PO.app */,
 				8CB8B8F61808A0D9006BF06E /* Strings2POTests.octest */,
+				8C3ACAEA1811D01A0089739B /* PO2Strings.app */,
+				8C3ACB031811D01B0089739B /* PO2StringsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +256,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C3ACAE91811D01A0089739B /* PO2Strings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3ACB111811D01B0089739B /* Build configuration list for PBXNativeTarget "PO2Strings" */;
+			buildPhases = (
+				8C3ACAE61811D01A0089739B /* Sources */,
+				8C3ACAE71811D01A0089739B /* Frameworks */,
+				8C3ACAE81811D01A0089739B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PO2Strings;
+			productName = PO2Strings;
+			productReference = 8C3ACAEA1811D01A0089739B /* PO2Strings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C3ACB021811D01B0089739B /* PO2StringsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3ACB141811D01B0089739B /* Build configuration list for PBXNativeTarget "PO2StringsTests" */;
+			buildPhases = (
+				8C3ACAFE1811D01B0089739B /* Sources */,
+				8C3ACAFF1811D01B0089739B /* Frameworks */,
+				8C3ACB001811D01B0089739B /* Resources */,
+				8C3ACB011811D01B0089739B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3ACB071811D01B0089739B /* PBXTargetDependency */,
+			);
+			name = PO2StringsTests;
+			productName = PO2StringsTests;
+			productReference = 8C3ACB031811D01B0089739B /* PO2StringsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8CB8B8D51808A0D9006BF06E /* Strings2PO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CB8B9071808A0D9006BF06E /* Build configuration list for PBXNativeTarget "Strings2PO" */;
@@ -221,11 +351,31 @@
 			targets = (
 				8CB8B8D51808A0D9006BF06E /* Strings2PO */,
 				8CB8B8F51808A0D9006BF06E /* Strings2POTests */,
+				8C3ACAE91811D01A0089739B /* PO2Strings */,
+				8C3ACB021811D01B0089739B /* PO2StringsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C3ACAE81811D01A0089739B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACAF11811D01A0089739B /* InfoPlist.strings in Resources */,
+				8C3ACAF71811D01A0089739B /* Credits.rtf in Resources */,
+				8C3ACAFD1811D01A0089739B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3ACB001811D01B0089739B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACB0D1811D01B0089739B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CB8B8D41808A0D9006BF06E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +397,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8C3ACB011811D01B0089739B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		8CB8B8F41808A0D9006BF06E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +426,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C3ACAE61811D01A0089739B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACAF31811D01A0089739B /* main.m in Sources */,
+				8C3ACAFA1811D01A0089739B /* PO2StringsDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3ACAFE1811D01B0089739B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3ACB101811D01B0089739B /* PO2StringsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CB8B8D21808A0D9006BF06E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +465,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8C3ACB071811D01B0089739B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C3ACAE91811D01A0089739B /* PO2Strings */;
+			targetProxy = 8C3ACB061811D01B0089739B /* PBXContainerItemProxy */;
+		};
 		8CB8B8FB1808A0D9006BF06E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8CB8B8D51808A0D9006BF06E /* Strings2PO */;
@@ -293,6 +478,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8C3ACAEF1811D01A0089739B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3ACAF01811D01A0089739B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C3ACAF51811D01A0089739B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3ACAF61811D01A0089739B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8C3ACAFB1811D01A0089739B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3ACAFC1811D01A0089739B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8C3ACB0B1811D01B0089739B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3ACB0C1811D01B0089739B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		8CB8B8E21808A0D9006BF06E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -328,6 +545,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C3ACB121811D01B0089739B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PO2Strings/PO2Strings-Prefix.pch";
+				INFOPLIST_FILE = "PO2Strings/PO2Strings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C3ACB131811D01B0089739B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PO2Strings/PO2Strings-Prefix.pch";
+				INFOPLIST_FILE = "PO2Strings/PO2Strings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8C3ACB151811D01B0089739B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PO2Strings.app/Contents/MacOS/PO2Strings";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PO2Strings/PO2Strings-Prefix.pch";
+				INFOPLIST_FILE = "PO2StringsTests/PO2StringsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8C3ACB161811D01B0089739B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PO2Strings.app/Contents/MacOS/PO2Strings";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PO2Strings/PO2Strings-Prefix.pch";
+				INFOPLIST_FILE = "PO2StringsTests/PO2StringsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		8CB8B9051808A0D9006BF06E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +715,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C3ACB111811D01B0089739B /* Build configuration list for PBXNativeTarget "PO2Strings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3ACB121811D01B0089739B /* Debug */,
+				8C3ACB131811D01B0089739B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C3ACB141811D01B0089739B /* Build configuration list for PBXNativeTarget "PO2StringsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3ACB151811D01B0089739B /* Debug */,
+				8C3ACB161811D01B0089739B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8CB8B8D11808A0D9006BF06E /* Build configuration list for PBXProject "Strings2PO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

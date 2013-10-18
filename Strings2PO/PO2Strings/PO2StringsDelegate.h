@@ -21,6 +21,7 @@
     NSMutableArray * stringsFiles;
     
     NSMutableDictionary * poLocalizations;
+    NSMutableDictionary * poNumberOfTranslationsPerFile;
     
     // translation sheet.
     

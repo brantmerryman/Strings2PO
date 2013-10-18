@@ -16,6 +16,8 @@
     stringsFiles = [NSMutableArray arrayWithCapacity:100];
     poFiles = [NSMutableArray arrayWithCapacity:100];
     poLocalizations = [NSMutableDictionary dictionaryWithCapacity:100];
+    poNumberOfTranslationsPerFile = [NSMutableDictionary dictionaryWithCapacity:100];
+
 }
 
 
@@ -63,6 +65,17 @@
                 @synchronized (poFiles) {
                     [poFiles addObject:filePath];
                 }
+                
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    
+                    NSUinteger numberOfTranslations = 0;
+                    
+                    NSString stringWith
+                    
+                    [poNumberOfTranslationsPerFile setObject:[NSNumber numberWithInteger:numberOfTranslations] forKey:filePath];
+                
+                });
+                
             }
         }
         
@@ -172,6 +185,13 @@
 - (void)translatePO2Strings:(id)context
 {
     @autoreleasepool {
+        
+        // determine the max value for the translations.
+        
+        // perform each translation.
+        
+        /*
+        
         for (float i = 0; !cancel && i <= 100; i += 1.0) {
             usleep(40000);
             dispatch_sync(dispatch_get_main_queue(), ^{
@@ -191,6 +211,7 @@
                 [NSApp endSheet:translationWorksheet returnCode:1];
             });
         }
+         */
     }
 }
 

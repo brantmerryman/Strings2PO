@@ -7,6 +7,7 @@
 //
 
 #import "PO2StringsTests.h"
+#import "NSDictionary+poFile.h"
 
 @implementation PO2StringsTests
 
@@ -24,9 +25,11 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testConvertPO2Dict
 {
-    STFail(@"Unit tests are not implemented yet in PO2StringsTests");
+    NSDictionary * d = [NSDictionary dictionaryWithContentsOfPOFile: @"/Users/brantm/strings2po/Strings2PO/PO2StringsTests/fr-vypr-mac-2.0.po"];
+    NSLog(@"%@", [d description]);
+    
 }
 
 @end

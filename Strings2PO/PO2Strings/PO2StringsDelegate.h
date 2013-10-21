@@ -31,6 +31,8 @@
     
     BOOL cancel;
     
+    NSString * destPath;
+    
 }
 
 
@@ -44,6 +46,7 @@
 
 - (IBAction)CancelAction:(id)sender;
 
+- (void)destProvided;
 
 @property (assign) IBOutlet NSWindow *window;
 

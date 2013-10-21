@@ -7,6 +7,7 @@
 //
 
 #import "PO2StringsDelegate.h"
+#import "NSDictionary+poFile.h"
 
 @implementation PO2StringsDelegate
 
@@ -68,9 +69,17 @@
                 
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                     
-                    NSUinteger numberOfTranslations = 0;
+                    NSUInteger numberOfTranslations = 0;
                     
-                    NSString stringWith
+                    NSError * err = nil;
+                    NSString * contents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
+                    if (err) {
+                        NSLog(@"%@", [err description]);
+                    }
+                    
+                    for (NSRange r = [contents rangeOfString:@"msgid"];NSNotFound != r.location; r = [contents rangeOfString:@"msgid" options:0 range:NSMakeRange(r.location + r.length, contents.length - (r.location + r.length))]) {
+                        ++numberOfTranslations;
+                    }
                     
                     [poNumberOfTranslationsPerFile setObject:[NSNumber numberWithInteger:numberOfTranslations] forKey:filePath];
                 
@@ -168,9 +177,30 @@
 
 - (IBAction)PO2Strings:(id)sender
 {
+    NSOpenPanel * op = [NSOpenPanel openPanel];
+    [op setAllowsMultipleSelection: NO];
+    [op setCanChooseFiles: NO];
+    [op setCanChooseDirectories:YES];
+    [op setCanCreateDirectories:YES];
+    [op setTitle:@"Pick a folder to save the translations."];
+    [op setPrompt:@"Choose"];
+    
+    [op beginSheetModalForWindow:self.window completionHandler:^(NSInteger result){
+
+        if (1 == result) {
+            destPath = [op.URL path];
+            
+            dispatch_async(dispatch_get_current_queue(), ^{
+                [self destProvided];
+            });
+        }
+    }];
+}
+
+- (void)destProvided
+{
     cancel = NO;
     [translationProgress setDoubleValue: 0.0];
-    NSLog(@"%@", [self.window description]);
     [NSApp beginSheet:translationWorksheet modalForWindow:self.window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
     
     [NSThread detachNewThreadSelector:@selector(translatePO2Strings:) toTarget:self withObject:nil];
@@ -187,21 +217,106 @@
     @autoreleasepool {
         
         // determine the max value for the translations.
+        NSError * err = nil;
+        NSUInteger currentProgress = 0;
         
-        // perform each translation.
-        
-        /*
-        
-        for (float i = 0; !cancel && i <= 100; i += 1.0) {
-            usleep(40000);
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                [translationProgress setDoubleValue: i];
-            });
+        NSUInteger totalTranslations = 0;
+        for (id key in [poNumberOfTranslationsPerFile allKeys]) {
+            totalTranslations += [[poNumberOfTranslationsPerFile objectForKey:key] unsignedIntegerValue];
         }
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [translationProgress setDoubleValue: 0];
+            [translationProgress setMaxValue: totalTranslations];
+            
+            [translationProgress setHidden:NO];
+        });
+        
+        
+        // translate each file
+        for (id key in poFiles) {
+            
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [translationProgress setDoubleValue:currentProgress];
+            });
+            
+            NSUInteger preLocProgress = currentProgress;
+            
+            NSUInteger thisLocProgress = [[poNumberOfTranslationsPerFile objectForKey:key] unsignedIntegerValue];
+            
+            NSString * localization = [poLocalizations objectForKey:key];
+            // now get each string file.
+            
+            NSString * localizationFolder = [destPath stringByAppendingPathComponent:localization];
+            
+            BOOL folder;
+            
+            if ([[NSFileManager defaultManager] fileExistsAtPath:localizationFolder isDirectory:&folder ]) {
+                if (!folder) {
+                    NSLog(@"Error: can't overwrite file at: %@", localizationFolder);
+                    currentProgress = preLocProgress + thisLocProgress;
+                    continue;
+                }
+            } else {
+                err = nil;
+                [[NSFileManager defaultManager] createDirectoryAtPath:localizationFolder withIntermediateDirectories:YES attributes:@{} error:&err];
+                if (err) {
+                    NSLog(@"Error: Couldn't create folder: %@", [err description]);
+                    currentProgress = preLocProgress + thisLocProgress;
+                    continue;
+                }
+            }
+            
+            NSDictionary * podict = [NSDictionary dictionaryWithContentsOfPOFile:key];
+            
+            for (id stringFilePath in stringsFiles) {
+                NSString * stringFileName = [[stringFilePath pathComponents] lastObject];
+                NSString * stringFileFullPath = [localizationFolder stringByAppendingPathComponent: stringFileName];
+                NSDictionary * strDict = [NSDictionary dictionaryWithContentsOfFile:stringFilePath];
+                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:stringFileFullPath]) {
+                    NSLog(@"Destination file exists - skipping. %@", stringFileFullPath);
+                    currentProgress += strDict.count;
+                    dispatch_sync(dispatch_get_main_queue(), ^{
+                        [translationProgress setDoubleValue:currentProgress];
+                    });
+                    continue;
+                }
+                
+                NSMutableDictionary * destDict = [NSMutableDictionary dictionaryWithCapacity:strDict.count];
+                
+                for (id stringKey in [strDict allKeys]) {
+                    
+                    id englishString = [strDict objectForKey:stringKey];
+                    
+                    id translation = [podict objectForKey:englishString];
+                    
+                    if (translation) {
+                        [destDict setObject:translation forKey:stringKey];
+                    }
+                    ++currentProgress;
+                    dispatch_sync(dispatch_get_main_queue(), ^{
+                        [translationProgress setDoubleValue:currentProgress];
+                    });
+                }
+                
+                // now write the destination file
+                NSLog(@"Writing strings file: %@", stringFileFullPath);
+                [strDict writeToFile:stringFileFullPath atomically:YES];
+                
+                if (cancel)
+                    break;
+            }
+
+            if (cancel)
+                break;
+        }
+        
+
         
         if (!cancel) {
             dispatch_sync(dispatch_get_main_queue(), ^{
-                [translationProgress setDoubleValue:100];
+                [translationProgress setDoubleValue:totalTranslations];
                 localizationLabel.stringValue = @"Done";
             });
             
@@ -211,7 +326,7 @@
                 [NSApp endSheet:translationWorksheet returnCode:1];
             });
         }
-         */
+         
     }
 }
 
@@ -248,12 +363,8 @@
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    NSLog(@"%@", [notification description]);
-/*
-    NSIndexSet * indexSet = stringsFilesTable.selectedRowIndexes;
-    
-    removeButton.enabled = (0 != indexSet.count);
-*/
+    removeStrings.enabled = stringsTable.selectedRowIndexes.count > 0;
+    removePOs.enabled = poTable.selectedRowIndexes.count > 0;
 }
 
 - (IBAction)CancelAction:(id)sender

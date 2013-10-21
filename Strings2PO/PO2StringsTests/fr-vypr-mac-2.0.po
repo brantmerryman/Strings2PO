@@ -1,0 +1,1320 @@
+# Context  Localized versions of Info.plist keys
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tai Hoang <tai@phmgmt.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Oct 2013: 592\n"
+
+# TRANSLATED : Thu Oct 17 11:30:23 2013
+# TRANSLATOR : SpeakLike 320feac1-1e63-434e-a5f9-6b3b1824fe1e
+# SENT : Tue Oct 15 17:13:14 2013
+# File created Oct 15, 2013 2:23:55 PM
+# Context  Class = "NSPanel"; title = "Connection Log"; ObjectID = "5";
+# 5.title
+msgid "Connection Log"
+msgstr "Journal de connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:23 2013
+# TRANSLATOR : SpeakLike 25f3d002-02ee-44ae-87d6-a695517e2683
+# SENT : Tue Oct 15 17:13:15 2013
+# Context  Class = "NSButtonCell"; title = "Copy To Clipboard"; ObjectID = "29";
+# 29.title
+msgid "Copy To Clipboard"
+msgstr "Copier Vers le Presse-papiers"
+
+# TRANSLATED : Thu Oct 17 11:30:23 2013
+# TRANSLATOR : SpeakLike 1bb74699-f52f-4243-a0c9-cf8ffef67260
+# SENT : Tue Oct 15 17:13:17 2013
+# Context  Class = "NSButtonCell"; title = "Email To Support"; ObjectID = "59";
+# 59.title
+msgid "Email To Support"
+msgstr "Email à l'assistance"
+
+# TRANSLATED : Thu Oct 17 11:30:24 2013
+# TRANSLATOR : SpeakLike 4f18e0cd-24bd-48a5-ab68-ad3ad434ecb8
+# SENT : Tue Oct 15 17:13:18 2013
+# Context  Network error on login
+# A network error occurred (%l). Login failed.
+msgid "A network error occurred (%l). Login failed."
+msgstr "Une problème de Réseau est apparu (%l). Échec de la connexion."
+
+# TRANSLATED : Thu Oct 17 11:30:24 2013
+# TRANSLATOR : SpeakLike 52586e94-4e71-485b-a546-1c61d32a4498
+# SENT : Tue Oct 15 17:13:20 2013
+# Context  Authorization error message
+# An authorization error occurred.
+msgid "An authorization error occurred."
+msgstr "Une erreur d'autorisation s'est produite."
+
+# TRANSLATED : Thu Oct 17 11:30:25 2013
+# TRANSLATOR : SpeakLike 83cecabe-0205-4850-b434-94ae6e3418f9
+# SENT : Tue Oct 15 17:13:21 2013
+# Context  Connecting Status
+# Authenticating...
+msgid "Authenticating..."
+msgstr "Authentification..."
+
+# TRANSLATED : Thu Oct 17 11:30:25 2013
+# TRANSLATOR : SpeakLike 737f4cd6-c5c1-4c05-b54d-873643ac5eed
+# SENT : Tue Oct 15 17:13:22 2013
+# Context  User alert title
+# Authentication Error
+msgid "Authentication Error"
+msgstr "Erreur d'Authentification"
+
+# TRANSLATED : Thu Oct 17 11:30:25 2013
+# TRANSLATOR : SpeakLike 96491f16-f37f-4adf-afd5-ee8d0370fa38
+# SENT : Tue Oct 15 17:13:24 2013
+# Context  Window title for bug report.
+# Bug Report
+msgid "Bug Report"
+msgstr "Rapport d'erreur"
+
+# TRANSLATED : Thu Oct 17 11:30:26 2013
+# TRANSLATOR : SpeakLike 68fec080-cce5-4bc1-9511-f2bab42dd814
+# SENT : Tue Oct 15 17:13:25 2013
+# Context  button title
+# Cancel
+msgid "Cancel"
+msgstr "Annuler"
+
+# TRANSLATED : Thu Oct 17 11:30:26 2013
+# TRANSLATOR : SpeakLike cd36d172-5994-4294-8083-ec03019cae98
+# SENT : Tue Oct 15 17:13:26 2013
+# Context  No comment provided by engineer.
+# Choose Sound File...
+msgid "Choose Sound File..."
+msgstr "Choisir un fichier de son..."
+
+# TRANSLATED : Thu Oct 17 11:30:27 2013
+# TRANSLATOR : SpeakLike 27ad2a8f-b5f5-4c05-9450-81915d2393f7
+# SENT : Tue Oct 15 17:13:28 2013
+# Context  No comment provided by engineer.
+# Closest Server
+msgid "Closest Server"
+msgstr "Serveur le plus proche"
+
+# TRANSLATED : Thu Oct 17 11:30:27 2013
+# TRANSLATOR : SpeakLike 60116cc2-aa83-446e-98bc-d277cefaeeb1
+# SENT : Tue Oct 15 17:13:29 2013
+# Context  Connecting Status
+# Configuring...
+msgid "Configuring..."
+msgstr "Configuration..."
+
+# TRANSLATED : Thu Oct 17 11:30:27 2013
+# TRANSLATOR : SpeakLike 43ff0dd3-7a61-4f98-beea-1a02a8ffd04f
+# SENT : Tue Oct 15 17:13:31 2013
+# Context  No comment provided by engineer.
+# Connect
+msgid "Connect"
+msgstr "Connectez"
+
+# TRANSLATED : Thu Oct 17 11:30:28 2013
+# TRANSLATOR : SpeakLike 9e7b98c2-287b-41d1-9c0e-e268170b2ec2
+# SENT : Tue Oct 15 17:13:32 2013
+# Context  Connecting Status
+# Connected
+msgid "Connected"
+msgstr "Connecté"
+
+# TRANSLATED : Thu Oct 17 11:30:28 2013
+# TRANSLATOR : SpeakLike f7fbc31d-42fe-4738-ac3a-366e7f845c16
+# SENT : Tue Oct 15 17:13:33 2013
+# Context  No comment provided by engineer.
+# CONNECTED
+msgid "CONNECTED"
+msgstr "CONNECTÉ"
+
+# TRANSLATED : Thu Oct 17 11:30:28 2013
+# TRANSLATOR : SpeakLike 0a8e1f8d-ccac-427c-8bf5-fad4273691ba
+# SENT : Tue Oct 15 17:13:35 2013
+# Context  No comment provided by engineer.
+# CONNECTING
+msgid "CONNECTING"
+msgstr "CONNEXION"
+
+# TRANSLATED : Thu Oct 17 11:30:29 2013
+# TRANSLATOR : SpeakLike 5cdd15e2-4341-4598-832d-d83a6f70f4f5
+# SENT : Tue Oct 15 17:13:36 2013
+# Context  No comment provided by engineer.
+# Connecting
+msgid "Connecting"
+msgstr "Connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:29 2013
+# TRANSLATOR : SpeakLike b1ec3a23-b381-4003-a0bc-01cd3150bd05
+# SENT : Tue Oct 15 17:13:38 2013
+# Context  Connecting Status
+# Connecting Link...
+msgid "Connecting Link..."
+msgstr "Connexion au lien..."
+
+# TRANSLATED : Thu Oct 17 11:30:30 2013
+# TRANSLATOR : SpeakLike 70c4613b-be98-445d-af1d-91a9c61d35b6
+# SENT : Tue Oct 15 17:13:39 2013
+# Context  Time Connected Display
+# Connecting...
+msgid "Connecting..."
+msgstr "Connexion en cours ..."
+
+# TRANSLATED : Thu Oct 17 11:30:30 2013
+# TRANSLATOR : SpeakLike 418bc5dd-2d08-4cf4-94e1-495023e5522a
+# SENT : Tue Oct 15 17:13:40 2013
+# Context  Alert title
+# Connection Error
+msgid "Connection Error"
+msgstr "Erreur de Connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:30 2013
+# TRANSLATOR : SpeakLike 33d42736-a4be-47f0-ac30-8bef6127672d
+# SENT : Tue Oct 15 17:13:42 2013
+# Context  OpenVPN Connection failure description
+# Connection failure (authentication error)
+msgid "Connection failure (authentication error)"
+msgstr "Échec de la connexion (erreur d'authentification)"
+
+# TRANSLATED : Thu Oct 17 11:30:31 2013
+# TRANSLATOR : SpeakLike 90e7c7c5-7cc0-4b88-844b-ce4ca8e8445e
+# SENT : Tue Oct 15 17:13:43 2013
+# Context  Window title for contact support.
+# Contact Support
+msgid "Contact Support"
+msgstr "Contacter l´Assistance"
+
+# TRANSLATED : Thu Oct 17 11:30:31 2013
+# TRANSLATOR : SpeakLike 2788cd2d-a683-4878-a419-69be936e7c8f
+# SENT : Tue Oct 15 17:13:45 2013
+# Context  Label for contact support dialog progress sheet.
+# Contacting Support Request
+msgid "Contacting Support Request"
+msgstr "Demande de Contact Support"
+
+# TRANSLATED : Thu Oct 17 11:30:31 2013
+# TRANSLATOR : SpeakLike 796d3126-6a8a-4167-ae02-98886a67c00f
+# SENT : Tue Oct 15 17:13:46 2013
+# Context  NAT Firewall Label
+# Disabled
+msgid "Disabled"
+msgstr "Désactivé"
+
+# TRANSLATED : Thu Oct 17 11:30:32 2013
+# TRANSLATOR : SpeakLike 5566734b-5123-4ed9-a99e-a9aeded23c36
+# SENT : Tue Oct 15 17:13:52 2013
+# Context  No comment provided by engineer.
+# Disconnect
+msgid "Disconnect"
+msgstr "Déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:30:32 2013
+# TRANSLATOR : SpeakLike cced1ebb-fa77-47d2-a096-6b6ffd7abda1
+# SENT : Tue Oct 15 17:13:54 2013
+# Context  No comment provided by engineer.
+# DISCONNECTED
+msgid "DISCONNECTED"
+msgstr "DÉCONNEXION"
+
+# TRANSLATED : Thu Oct 17 11:30:32 2013
+# TRANSLATOR : SpeakLike ba9448b1-8b8e-4dd4-afd4-d2f5746fe897
+# SENT : Tue Oct 15 17:13:55 2013
+# Context  Connecting Status
+# Disconnected
+msgid "Disconnected"
+msgstr "Déconnecté"
+
+# TRANSLATED : Thu Oct 17 11:30:33 2013
+# TRANSLATOR : SpeakLike 46d9aa14-7714-4b5b-bab7-7fad469335a0
+# SENT : Tue Oct 15 17:13:56 2013
+# Context  No comment provided by engineer.
+# DISCONNECTING
+msgid "DISCONNECTING"
+msgstr "DÉCONNEXION"
+
+# TRANSLATED : Thu Oct 17 11:30:33 2013
+# TRANSLATOR : SpeakLike d6667d2b-db0e-4aab-a39e-bf5ee6777f72
+# SENT : Tue Oct 15 17:13:58 2013
+# Context  No comment provided by engineer.
+# Disconnecting
+msgid "Disconnecting"
+msgstr "Déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:30:34 2013
+# TRANSLATOR : SpeakLike 22312958-cb2d-4e74-8e8b-5e69b9ab20b8
+# SENT : Tue Oct 15 17:13:59 2013
+# Context  Connecting Status
+# Disconnecting...
+msgid "Disconnecting..."
+msgstr "Déconnexion en cours..."
+
+# TRANSLATED : Thu Oct 17 11:30:34 2013
+# TRANSLATOR : SpeakLike 019bb0df-df85-4593-a8c4-0e63fdb479b5
+# SENT : Tue Oct 15 17:14:00 2013
+# Context  NAT Firewall Label
+# Enabled
+msgid "Enabled"
+msgstr "Activé"
+
+# TRANSLATED : Thu Oct 17 11:30:34 2013
+# TRANSLATOR : SpeakLike 43f0ec22-e203-4887-b6c8-5dc3be2fe0c4
+# SENT : Tue Oct 15 17:14:02 2013
+# Context  No comment provided by engineer.
+# Error
+msgid "Error"
+msgstr "Erreur"
+
+# TRANSLATED : Thu Oct 17 11:30:35 2013
+# TRANSLATOR : SpeakLike 93f9dad7-3c9d-4b93-abc5-67414646bbe4
+# SENT : Tue Oct 15 17:14:03 2013
+# Context  Content label.
+# Feedback
+msgid "Feedback"
+msgstr "Retour d'information"
+
+# TRANSLATED : Thu Oct 17 11:30:35 2013
+# TRANSLATOR : SpeakLike 364e275b-3755-4985-b61c-173f61c4d16b
+# SENT : Tue Oct 15 17:14:04 2013
+# Context  Sheet title - shown when the daemon isn't running possibly because the user canceled it.
+# Helper Tool Required.
+msgid "Helper Tool Required."
+msgstr "Outil d'assistance requis."
+
+# TRANSLATED : Thu Oct 17 11:30:35 2013
+# TRANSLATOR : SpeakLike 785d7f91-bffd-408e-b1e6-b85876ddfdfa
+# SENT : Tue Oct 15 17:14:06 2013
+# Context  Connecting Status
+# Holding Link Off...
+msgid "Holding Link Off..."
+msgstr "Retenue du lien désactivé..."
+
+# TRANSLATED : Thu Oct 17 11:30:36 2013
+# TRANSLATOR : SpeakLike 7755a64e-d953-4936-a1c3-c1a6c9a146bb
+# SENT : Tue Oct 15 17:14:07 2013
+# Context  Support instructions
+# If you have a problem, we are here to help. Please describe how our support team can assist you.
+msgid "If you have a problem, we are here to help. Please describe how our support team can assist you."
+msgstr "Si vous avez un problème, nous sommes là pour vous aider. Merci d'expliquer à votre équipe d'assistance comment elle peut vous assister."
+
+# TRANSLATED : Thu Oct 17 11:30:36 2013
+# TRANSLATOR : SpeakLike 5257fb04-5b2b-44ab-84d3-caf4eedb23f5
+# SENT : Tue Oct 15 17:14:08 2013
+# Context  Connecting Status
+# Initializing...
+msgid "Initializing..."
+msgstr "Initialisation..."
+
+# TRANSLATED : Thu Oct 17 11:30:36 2013
+# TRANSLATOR : SpeakLike f35b3a64-57f4-440b-8e68-a6a7dbbc1a08
+# SENT : Tue Oct 15 17:14:10 2013
+# Context  Install the Helper Tool.
+# Install
+msgid "Install"
+msgstr "Installer"
+
+# TRANSLATED : Thu Oct 17 11:30:37 2013
+# TRANSLATOR : SpeakLike 674a0341-923e-404d-8414-fc87cd542d1f
+# SENT : Tue Oct 15 17:14:11 2013
+# Context  256-bit encryption is strong encryption and is more secure than PPTP. Slower speeds due to encryption strength comparable to OpenVPN.  Built-in support by most desktop, mobile and tablet devices.
+# L2TP_Description
+msgid "256-bit encryption is strong encryption and is more secure than PPTP. Slower speeds due to encryption strength comparable to OpenVPN.  Built-in support by most desktop, mobile and tablet devices."
+msgstr "L'encodage 256-bit est un encodage fort et plus sécurisé qu'en PPTP.  Vitesse plus lente due à la force de l'encodage comparable au OpenVPN.   Prise en charge par la plupart des ordinateurs, portables et tablettes."
+
+# TRANSLATED : Thu Oct 17 11:30:37 2013
+# TRANSLATOR : SpeakLike b8246d99-b813-4c5a-a24e-5ed63384cec4
+# SENT : Tue Oct 15 17:14:13 2013
+# Context  No comment provided by engineer.
+# Logged Out
+msgid "Logged Out"
+msgstr "Déconnecté"
+
+# TRANSLATED : Thu Oct 17 11:30:37 2013
+# TRANSLATOR : SpeakLike 0052b5a6-fe90-459f-9857-4e0db961c214
+# SENT : Tue Oct 15 17:14:14 2013
+# Context  No comment provided by engineer.
+# Logging In
+msgid "Logging In"
+msgstr "Connecté"
+
+# TRANSLATED : Thu Oct 17 11:30:38 2013
+# TRANSLATOR : SpeakLike 9a893482-915b-4470-8f4a-c08bb36b2982
+# SENT : Tue Oct 15 17:14:15 2013
+# Context  No comment provided by engineer.
+# Logging Out
+msgid "Logging Out"
+msgstr "Déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:30:38 2013
+# TRANSLATOR : SpeakLike f3c842b4-8502-41dd-a47b-299fe07d0c6b
+# SENT : Tue Oct 15 17:14:17 2013
+# Context  Login error alert title
+# Login Error
+msgid "Login Error"
+msgstr "Erreur de connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:38 2013
+# TRANSLATOR : SpeakLike 3f895980-03e1-4c25-8e8d-8abf12a9ae98
+# SENT : Tue Oct 15 17:14:18 2013
+# Context  No comment provided by engineer.
+# Login Failure
+msgid "Login Failure"
+msgstr "Echec de la connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:39 2013
+# TRANSLATOR : SpeakLike c5e3d953-8029-436f-a45e-2bb57fecfd64
+# SENT : Tue Oct 15 17:14:20 2013
+# Context  Content label
+# More Information
+msgid "More Information"
+msgstr "Plus d'information"
+
+# TRANSLATED : Thu Oct 17 11:30:39 2013
+# TRANSLATOR : SpeakLike 894a0105-634a-491f-9a9e-2eda722e3ec6
+# SENT : Tue Oct 15 17:14:21 2013
+# Context  Ping failed label
+# ms
+msgid "ms"
+msgstr "ms"
+
+# TRANSLATED : Thu Oct 17 11:30:39 2013
+# TRANSLATOR : SpeakLike 9e83fb73-cf62-48e4-a1c3-7e5248cbb4d0
+# SENT : Tue Oct 15 17:14:22 2013
+# Context  NAT Firewall Label
+# NAT Firewall: Disabled
+msgid "NAT Firewall: Disabled"
+msgstr "Pare-feu NAT: Désactivé"
+
+# TRANSLATED : Thu Oct 17 11:30:40 2013
+# TRANSLATOR : SpeakLike 571f87cc-ec11-49a2-9fca-321291f65a53
+# SENT : Tue Oct 15 17:14:24 2013
+# Context  NAT Firewall Label
+# NAT Firewall: Enabled
+msgid "NAT Firewall: Enabled"
+msgstr "Pare-feu NAT: Activé"
+
+# TRANSLATED : Thu Oct 17 11:30:40 2013
+# TRANSLATOR : SpeakLike 24e5920c-9156-4aca-9db0-4039f4b1080e
+# SENT : Tue Oct 15 17:14:25 2013
+# Context  Connecting Status
+# Negotiating Link...
+msgid "Negotiating Link..."
+msgstr "Lien en Négotiation..."
+
+# TRANSLATED : Thu Oct 17 11:30:40 2013
+# TRANSLATOR : SpeakLike 0b6d3149-bb07-406c-afed-c638e0e0e1c8
+# SENT : Tue Oct 15 17:14:26 2013
+# Context  Connecting Status
+# Negotiating Network...
+msgid "Negotiating Network..."
+msgstr "Négociation du réseau..."
+
+# TRANSLATED : Thu Oct 17 11:30:41 2013
+# TRANSLATOR : SpeakLike 5fb4cc6e-8b51-49c7-b33d-f168c7318d96
+# SENT : Tue Oct 15 17:14:28 2013
+# Context  Label for when no internet connection is present.
+# No Connection
+msgid "No Connection"
+msgstr "Pas de connexion"
+
+# TRANSLATED : Thu Oct 17 11:30:41 2013
+# TRANSLATOR : SpeakLike a976f5cf-84dd-4a71-a428-07053fef06e1
+# SENT : Tue Oct 15 17:14:29 2013
+# Context  No comment provided by engineer.
+# No Internet
+msgid "No Internet"
+msgstr "Pas d'internet"
+
+# TRANSLATED : Thu Oct 17 11:30:42 2013
+# TRANSLATOR : SpeakLike 8ee75e1f-b4fb-43ba-934f-acfe705eef5d
+# SENT : Tue Oct 15 17:14:31 2013
+# Context  Time Connected Display
+# Not Connected
+msgid "Not Connected"
+msgstr "Pas connecté"
+
+# TRANSLATED : Thu Oct 17 11:30:42 2013
+# TRANSLATOR : SpeakLike 30e4ff88-065b-4fad-b004-3186ce1c3ea3
+# SENT : Tue Oct 15 17:14:32 2013
+# Context  Button title
+# OK
+msgid "OK"
+msgstr "OK"
+
+# TRANSLATED : Thu Oct 17 11:30:42 2013
+# TRANSLATOR : SpeakLike 32d5d550-749d-44b8-8f94-18e6dc0fc5dd
+# SENT : Tue Oct 15 17:14:33 2013
+# Context  Less secure than OpenVPN - 256 bit encryption. Trades decreased encryption strength for faster speeds.
+# OpenVPN160_Description
+msgid "Less secure than OpenVPN - 256 bit encryption. Trades decreased encryption strength for faster speeds."
+msgstr "Moins sécurisé que OpenVPN - encode 256 bit. Échange la force d'encodage pour des vitesses plus rapides."
+
+# TRANSLATED : Thu Oct 17 11:30:42 2013
+# TRANSLATOR : SpeakLike 996f6db2-a4c8-462a-9341-a36214d6ec1e
+# SENT : Tue Oct 15 17:14:35 2013
+# Context  The premier VPN protocol. Best performing protocol with fastest speeds, even on connections with high latency and across great distances. Most reliable and stable protocol, even behind wireless routers, on non-reliable networks and on Wi-Fi hotspots.
+# OpenVPN256_Description
+msgid "The premier VPN protocol. Best performing protocol with fastest speeds, even on connections with high latency and across great distances. Most reliable and stable protocol, even behind wireless routers, on non-reliable networks and on Wi-Fi hotspots."
+msgstr "Le meilleur protocole VPN. Protocole le plus performant, plus rapide, même en connexion à forte latence et à travers de longues distances. Le protocole le plus sécurisé et stable, même avec des routeurs sans fils, sur réseaux non sécurisés et hotspots Wi-Fi ."
+
+# TRANSLATED : Thu Oct 17 11:30:43 2013
+# TRANSLATOR : SpeakLike ef0c9027-96bd-443f-80de-8644f9aed532
+# SENT : Tue Oct 15 17:14:36 2013
+# Context  Bug report instructions
+# Our team reads every bug report. You can help us by letting us know what you were doing when the bug occurred.
+msgid "Our team reads every bug report. You can help us by letting us know what you were doing when the bug occurred."
+msgstr "Notre équipe lit chaque rapport d'erreur. Vous pouvez nous aider en nous indiquant ce que vous faisiez quand l'erreur a eu lieu."
+
+# TRANSLATED : Thu Oct 17 11:30:43 2013
+# TRANSLATOR : SpeakLike 5d044994-4331-48c8-83ec-ef551227823e
+# SENT : Tue Oct 15 17:14:37 2013
+# Context  placeholder prompt
+# Please describe the issue you are experiencing.
+msgid "Please describe the issue you are experiencing."
+msgstr "Veuillez décrire le problème."
+
+# TRANSLATED : Thu Oct 17 11:30:43 2013
+# TRANSLATOR : SpeakLike a2844f47-5916-4829-8044-98d04ee27f8d
+# SENT : Tue Oct 15 17:14:39 2013
+# Context  placeholder prompt
+# Please tell us what you were doing when the bug occurred...
+msgid "Please tell us what you were doing when the bug occurred..."
+msgstr "Veuillez-nous dire ce que vous faisiez que l'erreur s'est produite..."
+
+# TRANSLATED : Thu Oct 17 11:30:44 2013
+# TRANSLATOR : SpeakLike e4d86e78-961d-4eac-ae68-87cc1114885b
+# SENT : Tue Oct 15 17:14:40 2013
+# Context  Provides basic security. Slightly faster due to 128 bit encryption. A good choice if security is not a top priority. Like L2TP/IPsec, PPTP has built-in support by most desktop, mobile and tablet devices.
+# PPTP_Description
+msgid "Provides basic security. Slightly faster due to 128 bit encryption. A good choice if security is not a top priority. Like L2TP/IPsec, PPTP has built-in support by most desktop, mobile and tablet devices."
+msgstr "Fournit une sécurité de base. Légèrement plus rapide grâce à l'encodage 128 bit. C'est un bon choix si la sécurité n'est pas votre priorité principale. Comme L2TP/IPsec, PPTP a un service client intégré pour la plupart des ordinateurs, des portables et des tablettes."
+
+# TRANSLATED : Thu Oct 17 11:30:44 2013
+# TRANSLATOR : SpeakLike 41dbf7d8-8f74-47c6-a821-f8ea97b25147
+# SENT : Tue Oct 15 17:14:42 2013
+# Context  Window title for product feedback.
+# Product Feedback
+msgid "Product Feedback"
+msgstr "Impressions sur le produit"
+
+# TRANSLATED : Thu Oct 17 11:30:44 2013
+# TRANSLATOR : SpeakLike 9693423e-8add-4a7e-84fe-deed77e93490
+# SENT : Tue Oct 15 17:14:43 2013
+# Context  Label for public IP address.
+# PUBLIC IP ADDRESS
+msgid "PUBLIC IP ADDRESS"
+msgstr "ADRESSE IP PUBLIQUE"
+
+# TRANSLATED : Thu Oct 17 11:30:45 2013
+# TRANSLATOR : SpeakLike 4891ab62-4005-416d-992b-92f9a39a3df6
+# SENT : Tue Oct 15 17:14:44 2013
+# Context  button title
+# Quit
+msgid "Quit"
+msgstr "Quitter"
+
+# TRANSLATED : Thu Oct 17 11:30:45 2013
+# TRANSLATOR : SpeakLike 46c965e2-ce50-4ded-a13c-0505d6f7d2e4
+# SENT : Tue Oct 15 17:14:46 2013
+# Context  Quit Confirmation Message Text
+# Quitting VyprVPN will terminate your VPN connection.  Do you wish to continue?
+msgid "Quitting VyprVPN will terminate your VPN connection.  Do you wish to continue?"
+msgstr "Sortir de VyprVPN mettra fin à votre connexion VPN. Souhaitez-vous continuer?"
+
+# TRANSLATED : Thu Oct 17 11:30:45 2013
+# TRANSLATOR : SpeakLike 9d275b3a-5d4e-4d34-892b-53fc0e252dd0
+# SENT : Tue Oct 15 17:14:47 2013
+# Context  Tunnel Status
+# Reconnecting...
+msgid "Reconnecting..."
+msgstr "Reconnexion"
+
+# TRANSLATED : Thu Oct 17 11:30:46 2013
+# TRANSLATOR : SpeakLike 37cbb1cd-f87b-4d56-b22b-972409e5e899
+# SENT : Tue Oct 15 17:14:48 2013
+# Context  Button title for bug report.
+# Report Bug
+msgid "Report Bug"
+msgstr "Indiquer un bug"
+
+# TRANSLATED : Thu Oct 17 11:30:46 2013
+# TRANSLATOR : SpeakLike cc569902-86d9-4369-8250-2aeca914cbae
+# SENT : Tue Oct 15 17:14:50 2013
+# Context  Restart the application.
+# Restart
+msgid "Restart"
+msgstr "Redémarrage"
+
+# TRANSLATED : Thu Oct 17 11:30:46 2013
+# TRANSLATOR : SpeakLike 604e838a-c819-42b4-88be-210fc8c43d7b
+# SENT : Tue Oct 15 17:14:51 2013
+# Context  Label for bug report dialog progress sheet.
+# Sending Bug Report
+msgid "Sending Bug Report"
+msgstr "Envoi du rapport d'erreur"
+
+# TRANSLATED : Thu Oct 17 11:30:47 2013
+# TRANSLATOR : SpeakLike 34076fd3-e664-41aa-9912-588ac6129432
+# SENT : Tue Oct 15 17:14:52 2013
+# Context  Label for feedback dialog progress sheet.
+# Sending Feedback
+msgid "Sending Feedback"
+msgstr "envoi du feed-back"
+
+# TRANSLATED : Thu Oct 17 11:30:47 2013
+# TRANSLATOR : SpeakLike 8b6f4683-e9ea-4b41-9cf3-5ccdfb32682a
+# SENT : Tue Oct 15 17:14:59 2013
+# Context  No comment provided by engineer.
+# Show server locations...
+msgid "Show server locations..."
+msgstr "Montrer l'emplacement du serveur..."
+
+# TRANSLATED : Thu Oct 17 11:30:47 2013
+# TRANSLATOR : SpeakLike 34b08dfa-658b-47d1-a625-24d693e16cb3
+# SENT : Tue Oct 15 17:15:00 2013
+# Context  Action button title
+# Submit Feedback
+msgid "Submit Feedback"
+msgstr "Envoyer le feed-back"
+
+# TRANSLATED : Thu Oct 17 11:30:48 2013
+# TRANSLATOR : SpeakLike 97c88ec7-c894-4455-944b-ace1f71eb3b8
+# SENT : Tue Oct 15 17:15:07 2013
+# Context  Content label
+# Support Request
+msgid "Support Request"
+msgstr "Demande d'aide"
+
+# TRANSLATED : Thu Oct 17 11:30:48 2013
+# TRANSLATOR : SpeakLike 194969bf-4124-4e49-a0ad-d771330942fb
+# SENT : Tue Oct 15 17:15:08 2013
+# Context  Connecting Status
+# Suspended
+msgid "Suspended"
+msgstr "Arrêté"
+
+# TRANSLATED : Thu Oct 17 11:30:48 2013
+# TRANSLATOR : SpeakLike a08a9ed0-2450-46c0-825d-35a065df64a9
+# SENT : Tue Oct 15 17:15:09 2013
+# Context  placeholder prompt
+# Tell us about your experience with VyprVPN...
+msgid "Tell us about your experience with VyprVPN..."
+msgstr "Parler-nous de votre expérience avec le VyprVPN..."
+
+# TRANSLATED : Thu Oct 17 11:30:49 2013
+# TRANSLATOR : SpeakLike dd97ddd8-3920-400a-acbc-e2efbba92df6
+# SENT : Tue Oct 15 17:15:11 2013
+# Context  Connecting Status
+# Terminating...
+msgid "Terminating..."
+msgstr "Finalisation..."
+
+# TRANSLATED : Thu Oct 17 11:30:49 2013
+# TRANSLATOR : SpeakLike a95591d8-cb4c-4f2f-a054-81bf0202dba3
+# SENT : Tue Oct 15 17:15:12 2013
+# Context  User error
+# The connect sound could not be set.
+msgid "The connect sound could not be set."
+msgstr "La connexion du son a échoué."
+
+# TRANSLATED : Thu Oct 17 11:30:49 2013
+# TRANSLATOR : SpeakLike c571006d-1108-4ded-8174-19a99c39ed7f
+# SENT : Tue Oct 15 17:15:14 2013
+# Context  Sheet title - refers to restarting the app
+# This change requires restart.
+msgid "This change requires restart."
+msgstr "Cette modification nécessite un redémarrage."
+
+# TRANSLATED : Thu Oct 17 11:30:50 2013
+# TRANSLATOR : SpeakLike 5ed0346a-4be0-4e83-8eb5-86141d6cc647
+# SENT : Tue Oct 15 17:15:16 2013
+# Context  Restart explanation message shown when the user chooses Status Bar only as an operating mode.
+# To apply this change, the application must restart. If VyprVPN is connected, your connection will remain active.
+msgid "To apply this change, the application must restart. If VyprVPN is connected, your connection will remain active."
+msgstr "Pour que cette modification soit effectuée, vous devez redémarrer l'application. Si le WyprVPN est connectée, votre connexion restera active."
+
+# TRANSLATED : Thu Oct 17 11:30:50 2013
+# TRANSLATOR : SpeakLike da61646d-d51a-4282-abac-c18b96ca4ed9
+# SENT : Tue Oct 15 17:15:17 2013
+# Context  General failure message
+# Unable to connect
+msgid "Unable to connect"
+msgstr "Impossible de se connecter"
+
+# TRANSLATED : Thu Oct 17 11:30:50 2013
+# TRANSLATOR : SpeakLike 7799e190-fe7a-4141-9976-4c3ca85e1bd7
+# SENT : Tue Oct 15 17:15:18 2013
+# Context  User error message
+# Unable to login
+msgid "Unable to login"
+msgstr "Impossible de se connecter"
+
+# TRANSLATED : Thu Oct 17 11:30:51 2013
+# TRANSLATOR : SpeakLike b41dec07-ff08-4c9b-aa7d-aebef9ecd2d4
+# SENT : Tue Oct 15 17:15:20 2013
+# Context  App name
+# VyprVPN
+msgid "VyprVPN"
+msgstr "VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:51 2013
+# TRANSLATOR : SpeakLike b5b3183b-91a3-4e44-95d8-5dfb4ea680b6
+# SENT : Tue Oct 15 17:15:21 2013
+# Context  Label for public IP address.
+# VYPRVPN IP ADDRESS
+msgid "VYPRVPN IP ADDRESS"
+msgstr "ADRESSE IP VYPRVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:52 2013
+# TRANSLATOR : SpeakLike 0505ca5f-cdb1-4e5b-a6a8-7ab079c1830b
+# SENT : Tue Oct 15 17:15:22 2013
+# Context  Explanation of the helper tool installation.
+# VyprVPN requires a helper tool in order to operate. Click Install to begin the installation process. You will be asked to provide administrator credentials.
+msgid "VyprVPN requires a helper tool in order to operate. Click Install to begin the installation process. You will be asked to provide administrator credentials."
+msgstr "Le VyprVPN nécessite un outil d'aide pour fonctionner. Cliquer sur Installer pour lancer le processus d'installation. Les références de l'administrateur vous seront exigées."
+
+# TRANSLATED : Thu Oct 17 11:30:52 2013
+# TRANSLATOR : SpeakLike d16a5ca8-0324-4e18-9352-1457e771cd1e
+# SENT : Tue Oct 15 17:15:24 2013
+# Context  Connecting Status
+# WaitingForCallBack...
+msgid "WaitingForCallBack..."
+msgstr "En Attente du Rappel..."
+
+# TRANSLATED : Thu Oct 17 11:30:52 2013
+# TRANSLATOR : SpeakLike b8213b08-e33b-4a9b-9067-336f72b96770
+# SENT : Tue Oct 15 17:15:25 2013
+# Context  Error sheet (Contact API)
+# We couldn't send your message
+msgid "We couldn't send your message"
+msgstr "Nous n'avons pas pu envoyer votre message"
+
+# TRANSLATED : Thu Oct 17 11:30:52 2013
+# TRANSLATOR : SpeakLike 721fd944-e8b8-4807-ad0a-eb8123612154
+# SENT : Tue Oct 15 17:15:26 2013
+# Context  Feedback instructions
+# We'd like to know how we can make our current product better. Tell us about your experience with VyprVPN.
+msgid "We'd like to know how we can make our current product better. Tell us about your experience with VyprVPN."
+msgstr "Nous aimerons savoir comment améliorer notre produit. Parlez-nous de votre expérience avec le VyprVPN."
+
+# TRANSLATED : Thu Oct 17 11:30:53 2013
+# TRANSLATOR : SpeakLike fc984927-2af3-4ba0-b30a-e753296000dd
+# SENT : Tue Oct 15 17:15:29 2013
+# Context  Class = "NSMenuItem"; title = "Log In..."; ObjectID = "2";
+# 2.title
+msgid "Log In..."
+msgstr "Connexion..."
+
+# TRANSLATED : Thu Oct 17 11:30:53 2013
+# TRANSLATOR : SpeakLike da129d30-c61c-4fbd-8bcb-e5a508ac57c0
+# SENT : Tue Oct 15 17:15:30 2013
+# Context  Class = "NSMenuItem"; title = "Server Location"; ObjectID = "3";
+# 3.title
+msgid "Server Location"
+msgstr "Emplacement serveur"
+
+# TRANSLATED : Thu Oct 17 11:30:54 2013
+# TRANSLATOR : SpeakLike 3ef29063-2dae-4f03-8d9b-036a139d2c91
+# SENT : Tue Oct 15 17:15:31 2013
+# Context  Class = "NSMenuItem"; title = "<login for server list>"; ObjectID = "6";
+# 6.title
+msgid "<login for server list>"
+msgstr "<login for server list>"
+
+# TRANSLATED : Thu Oct 17 11:30:54 2013
+# TRANSLATOR : SpeakLike dd49aaab-e58d-4d2b-b4d8-89503b6ae326
+# SENT : Tue Oct 15 17:15:33 2013
+# Context  Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5";
+# 5.title
+msgid "Bring All to Front"
+msgstr "Ramener tout sur la façade"
+
+# TRANSLATED : Thu Oct 17 11:30:54 2013
+# TRANSLATOR : SpeakLike 5b5fd8ba-218c-471c-b423-1b6bca603083
+# SENT : Tue Oct 15 17:15:34 2013
+# Context  Class = "NSMenuItem"; title = "Window"; ObjectID = "19";
+# 19.title
+msgid "Window"
+msgstr "Fenêtre"
+
+# TRANSLATED : Thu Oct 17 11:30:54 2013
+# TRANSLATOR : SpeakLike 84dd5025-46b3-4ada-884a-5c34caa25779
+# SENT : Tue Oct 15 17:15:36 2013
+# Context  Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23";
+# 23.title
+msgid "Minimize"
+msgstr "Minimiser"
+
+# TRANSLATED : Thu Oct 17 11:30:55 2013
+# TRANSLATOR : SpeakLike 168147dc-2159-4a0e-bc7d-8d7b85bd6ab2
+# SENT : Tue Oct 15 17:15:37 2013
+# Context  Class = "NSMenuItem"; title = "About VyprVPN"; ObjectID = "58";
+# 58.title
+msgid "About VyprVPN"
+msgstr "A propos de VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:55 2013
+# TRANSLATOR : SpeakLike c5028fb9-f47a-4a3c-987b-2beae81af54d
+# SENT : Tue Oct 15 17:15:38 2013
+# Context  Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "129";
+# 129.title
+msgid "Preferences..."
+msgstr "Préférences..."
+
+# TRANSLATED : Thu Oct 17 11:30:55 2013
+# TRANSLATOR : SpeakLike 577355b8-fd93-4e58-b43c-9c3092d4bf51
+# SENT : Tue Oct 15 17:15:40 2013
+# Context  Class = "NSMenuItem"; title = "Hide VyprVPN"; ObjectID = "134";
+# 134.title
+msgid "Hide VyprVPN"
+msgstr "Dissimuler VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:56 2013
+# TRANSLATOR : SpeakLike a3226490-7e34-41a2-9019-6bec897f1446
+# SENT : Tue Oct 15 17:15:41 2013
+# Context  Class = "NSMenuItem"; title = "Quit VyprVPN"; ObjectID = "136";
+# 136.title
+msgid "Quit VyprVPN"
+msgstr "Quitter VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:56 2013
+# TRANSLATOR : SpeakLike 7e3d7c78-2919-4d3c-aa73-b5f9dcad57a5
+# SENT : Tue Oct 15 17:15:43 2013
+# Context  Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145";
+# 145.title
+msgid "Hide Others"
+msgstr "Dissimuler les autres"
+
+# TRANSLATED : Thu Oct 17 11:30:56 2013
+# TRANSLATOR : SpeakLike aeaf6064-1956-4653-bf85-6940e9a29ae1
+# SENT : Tue Oct 15 17:15:44 2013
+# Context  Class = "NSMenuItem"; title = "Show All"; ObjectID = "150";
+# 150.title
+msgid "Show All"
+msgstr "Tout afficher"
+
+# TRANSLATED : Thu Oct 17 11:30:57 2013
+# TRANSLATOR : SpeakLike 48523255-be0e-4cbe-8c6d-ec09e28c47c1
+# SENT : Tue Oct 15 17:15:45 2013
+# Context  Class = "NSMenuItem"; title = "Help"; ObjectID = "490";
+# 490.title
+msgid "Help"
+msgstr "Aide"
+
+# TRANSLATED : Thu Oct 17 11:30:57 2013
+# TRANSLATOR : SpeakLike a5f47391-3ee4-4500-8bf2-62c6455155f9
+# SENT : Tue Oct 15 17:15:47 2013
+# Context  Class = "NSTextFieldCell"; title = "Application Version %@"; ObjectID = "542";
+# 542.title
+msgid "Application Version %@"
+msgstr "Application Version %@"
+
+# TRANSLATED : Thu Oct 17 11:30:57 2013
+# TRANSLATOR : SpeakLike 0a300433-2d8d-438e-b873-1e6677baea27
+# SENT : Tue Oct 15 17:15:48 2013
+# Context  Class = "NSTextFieldCell"; title = "Â© 2013 Golden Frog, Inc."; ObjectID = "543";
+# 543.title
+msgid "Â© 2013 Golden Frog, Inc."
+msgstr "Â© 2013 Golden Frog, Inc."
+
+# TRANSLATED : Thu Oct 17 11:30:58 2013
+# TRANSLATOR : SpeakLike d3fa3d5e-b5e7-4321-9ac9-969016379da2
+# SENT : Tue Oct 15 17:15:49 2013
+# Context  Class = "NSMenuItem"; title = "Speed Graph"; ObjectID = "595";
+# 595.title
+msgid "Speed Graph"
+msgstr "Graphique de vitesse"
+
+# TRANSLATED : Thu Oct 17 11:30:58 2013
+# TRANSLATOR : SpeakLike 98187d6f-33da-4c57-8dc1-f613a862e2fc
+# SENT : Tue Oct 15 17:15:51 2013
+# Context  Class = "NSMenuItem"; title = "Show VyprVPN"; ObjectID = "617";
+# 617.title
+msgid "Show VyprVPN"
+msgstr "Afficher VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:30:58 2013
+# TRANSLATOR : SpeakLike 92682756-1ec7-4571-b294-39e211f66177
+# SENT : Tue Oct 15 17:15:52 2013
+# Context  Class = "NSMenuItem"; title = "Update Available"; ObjectID = "619";
+# 619.title
+msgid "Update Available"
+msgstr "Mise à jour disponible"
+
+# TRANSLATED : Thu Oct 17 11:30:59 2013
+# TRANSLATOR : SpeakLike bc5f012c-0fb8-4104-9c26-1e11e1c1d126
+# SENT : Tue Oct 15 17:15:53 2013
+# Context  Class = "NSMenuItem"; title = "FAQ"; ObjectID = "635";
+# 635.title
+msgid "FAQ"
+msgstr "FAQ"
+
+# TRANSLATED : Thu Oct 17 11:30:59 2013
+# TRANSLATOR : SpeakLike 19bbd4fc-37aa-4445-8664-b2b6c830172e
+# SENT : Tue Oct 15 17:15:55 2013
+# Context  Class = "NSMenuItem"; title = "Toggle App Update"; ObjectID = "767";
+# 767.title
+msgid "Toggle App Update"
+msgstr "Basculer vers mise à jour App"
+
+# TRANSLATED : Thu Oct 17 11:31:00 2013
+# TRANSLATOR : SpeakLike 7e886e0a-d5fa-46a1-a7c1-2e5c13b03661
+# SENT : Tue Oct 15 17:15:56 2013
+# Context  Class = "NSMenuItem"; title = "Feature Request"; ObjectID = "777";
+# 777.title
+msgid "Feature Request"
+msgstr "Demandes de fonctionnalités"
+
+# TRANSLATED : Thu Oct 17 11:31:00 2013
+# TRANSLATOR : SpeakLike 805c43ef-606f-4dd9-bd5f-6a81eff55cc4
+# SENT : Tue Oct 15 17:15:58 2013
+# Context  Class = "NSMenuItem"; title = "Report a Problem"; ObjectID = "778";
+# 778.title
+msgid "Report a Problem"
+msgstr "Signaler un problème"
+
+# TRANSLATED : Thu Oct 17 11:31:00 2013
+# TRANSLATOR : SpeakLike 0dc80711-96f9-4c4d-b4e1-addefd1a7666
+# SENT : Tue Oct 15 17:15:59 2013
+# Context  Class = "NSTextFieldCell"; title = "â Incorrect Username and Password"; ObjectID = "165";
+# 165.title
+msgid "Incorrect Username and Password"
+msgstr "Nom d'utilisateur et Mot de passe incorrects"
+
+# TRANSLATED : Thu Oct 17 11:31:01 2013
+# TRANSLATOR : SpeakLike 71488f34-0c69-42cf-ade7-3746176b3492
+# SENT : Tue Oct 15 17:16:00 2013
+# Context  Class = "StyledCheckbox"; 218.ibExternalUserDefinedRuntimeAttributesLocalizableStrings[0] = "Remember Password"; ObjectID = "218";
+# 218.ibExternalUserDefinedRuntimeAttributesLocalizableStrings[0]
+msgid "Remember Password"
+msgstr "Se rappeler du mot de passe"
+
+# TRANSLATED : Thu Oct 17 11:31:01 2013
+# TRANSLATOR : SpeakLike 1efd1d6d-18b1-40f7-8c60-9d47b4dca26a
+# SENT : Tue Oct 15 17:16:02 2013
+# Context  Class = "NSButtonCell"; title = "Log in"; ObjectID = "243";
+# 243.title
+msgid "Log in"
+msgstr "Se connecter"
+
+# TRANSLATED : Thu Oct 17 11:31:01 2013
+# TRANSLATOR : SpeakLike 7151923d-d45d-49d8-bf7d-1a6c68a3db72
+# SENT : Tue Oct 15 17:16:03 2013
+# Context  Class = "NSTextFieldCell"; placeholderString = "Username"; ObjectID = "395";
+# 395.placeholderString
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+# TRANSLATED : Thu Oct 17 11:31:02 2013
+# TRANSLATOR : SpeakLike 5f1f06b4-2abb-4389-b8cb-2b5181f08ac2
+# SENT : Tue Oct 15 17:16:05 2013
+# Context  Class = "NSTextFieldCell"; placeholderString = "Password"; ObjectID = "427";
+# 427.placeholderString
+msgid "Password"
+msgstr "Mot de passe"
+
+# TRANSLATED : Thu Oct 17 11:31:02 2013
+# TRANSLATOR : SpeakLike 7226951d-71ee-455d-b0f4-9f329b597589
+# SENT : Tue Oct 15 17:16:06 2013
+# Context  Class = "NSButtonCell"; title = "Log In"; ObjectID = "475";
+# 475.title
+msgid "Log In"
+msgstr "Connexion"
+
+# TRANSLATED : Thu Oct 17 11:31:02 2013
+# TRANSLATOR : SpeakLike abd22aee-9696-4e89-8c53-41c5539339b0
+# SENT : Tue Oct 15 17:16:07 2013
+# Context  Class = "NSTextFieldCell"; title = "TIME CONNECTED"; ObjectID = "924";
+# 924.title
+msgid "TIME CONNECTED"
+msgstr "DURÉE DE CONNEXION"
+
+# TRANSLATED : Thu Oct 17 11:31:03 2013
+# TRANSLATOR : SpeakLike 8a94a9ee-34b2-4348-b836-aba07607f8f8
+# SENT : Tue Oct 15 17:16:09 2013
+# Context  Class = "NSTextFieldCell"; title = "VPN PROTOCOL & ENCRYPTION"; ObjectID = "932";
+# 932.title
+msgid "VPN PROTOCOL & ENCRYPTION"
+msgstr "PROTOCOLE VPN  & ENCODAGE"
+
+# TRANSLATED : Thu Oct 17 11:31:03 2013
+# TRANSLATOR : SpeakLike 2ff44ba4-dc1c-4c2d-a8b6-41606c3a539b
+# SENT : Tue Oct 15 17:16:10 2013
+# Context  Class = "NSTextFieldCell"; title = "NAT FIREWALL"; ObjectID = "940";
+# 940.title
+msgid "NAT FIREWALL"
+msgstr "PARE-FEU NAT"
+
+# TRANSLATED : Thu Oct 17 11:31:03 2013
+# TRANSLATOR : SpeakLike 3039cf98-51f3-4268-9b18-67ee3f3c948a
+# SENT : Tue Oct 15 17:16:11 2013
+# Context  Class = "NSTextFieldCell"; title = "L2TP - 256 bit encryption"; ObjectID = "993";
+# 993.title
+msgid "L2TP - 256 bit encryption"
+msgstr "L2TP - encodage 256 bit"
+
+# TRANSLATED : Thu Oct 17 11:31:04 2013
+# TRANSLATOR : SpeakLike 5ca2ab6d-f948-4413-ab49-c770baa9a9b8
+# SENT : Tue Oct 15 17:16:13 2013
+# Context  Class = "NSTextFieldCell"; title = "Inactive"; ObjectID = "1012";
+# 1012.title
+msgid "Inactive"
+msgstr "Inactif"
+
+# TRANSLATED : Thu Oct 17 11:31:04 2013
+# TRANSLATOR : SpeakLike c10b9f28-bba2-4062-8aba-78c6ffdc69c2
+# SENT : Tue Oct 15 17:16:14 2013
+# Context  Class = "NSTextFieldCell"; title = "No Internet Connection"; ObjectID = "1369";
+# 1369.title
+msgid "No Internet Connection"
+msgstr "Pas de connexion Internet"
+
+# TRANSLATED : Thu Oct 17 11:31:04 2013
+# TRANSLATOR : SpeakLike ddf74645-0f5b-43da-9337-f5f4c987c2d3
+# SENT : Tue Oct 15 17:16:15 2013
+# Context  Class = "NSWindow"; title = "VyprVPN Preferences"; ObjectID = "1";
+# 1.title
+msgid "VyprVPN Preferences"
+msgstr "Préférences VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:31:05 2013
+# TRANSLATOR : SpeakLike 4a7cc29d-e7c5-4182-abb2-746a3a844261
+# SENT : Tue Oct 15 17:16:17 2013
+# Context  Class = "NSToolbarItem"; label = "General"; ObjectID = "11";
+# 11.label
+msgid "General"
+msgstr "Général"
+
+# TRANSLATED : Thu Oct 17 11:31:05 2013
+# TRANSLATOR : SpeakLike 211b8d02-611b-4883-a26b-5ef80560d900
+# SENT : Tue Oct 15 17:16:18 2013
+# Context  Class = "NSToolbarItem"; label = "Account"; ObjectID = "56";
+# 56.label
+msgid "Account"
+msgstr "Compte"
+
+# TRANSLATED : Thu Oct 17 11:31:05 2013
+# TRANSLATOR : SpeakLike ed029f37-48f7-466b-a137-243a8b7a11c8
+# SENT : Tue Oct 15 17:16:25 2013
+# Context  Class = "NSMenu"; title = "OtherViews"; ObjectID = "65";
+# 65.title
+msgid "OtherViews"
+msgstr "autres vues"
+
+# TRANSLATED : Thu Oct 17 11:31:06 2013
+# TRANSLATOR : SpeakLike f34df66b-ec7b-4ef7-9251-50602c6cfad2
+# SENT : Tue Oct 15 17:16:26 2013
+# Context  Class = "NSMenuItem"; title = "Menu Bar Only"; ObjectID = "66";
+# 66.title
+msgid "Menu Bar Only"
+msgstr "Barre de Menu seulement"
+
+# TRANSLATED : Thu Oct 17 11:31:06 2013
+# TRANSLATOR : SpeakLike f37d9149-d0af-45f7-aa3a-5fc0e7436673
+# SENT : Tue Oct 15 17:16:27 2013
+# Context  Class = "NSMenuItem"; title = "Menu Bar & Dock"; ObjectID = "67";
+# 67.title
+msgid "Menu Bar & Dock"
+msgstr "Barre de menu & Dock"
+
+# TRANSLATED : Thu Oct 17 11:31:06 2013
+# TRANSLATOR : SpeakLike 721f48f0-bc17-44f0-acd4-be8074c154de
+# SENT : Tue Oct 15 17:16:29 2013
+# Context  Class = "NSTextFieldCell"; title = "Display VyprVPN icon in:"; ObjectID = "75";
+# 75.title
+msgid "Display VyprVPN icon in:"
+msgstr "Visualiser l'icône VyprVPN dans:"
+
+# TRANSLATED : Thu Oct 17 11:31:07 2013
+# TRANSLATOR : SpeakLike 71b45290-5b72-4f98-9501-bf1044983d8f
+# SENT : Tue Oct 15 17:16:30 2013
+# Context  Class = "NSToolbarItem"; label = "Protocol"; ObjectID = "82";
+# 82.label
+msgid "Protocol"
+msgstr "Protocole"
+
+# TRANSLATED : Thu Oct 17 11:31:07 2013
+# TRANSLATOR : SpeakLike 1fd34b7e-cbdd-4ba8-870a-42f888664589
+# SENT : Tue Oct 15 17:16:32 2013
+# Context  Class = "NSTextFieldCell"; title = "Startup:"; ObjectID = "89";
+# 89.title
+msgid "Startup:"
+msgstr "Démarrage:"
+
+# TRANSLATED : Thu Oct 17 11:31:07 2013
+# TRANSLATOR : SpeakLike 1932ba82-4c6e-4a68-b02c-da6066adbea8
+# SENT : Tue Oct 15 17:16:33 2013
+# Context  Class = "NSTextFieldCell"; title = "Connection:"; ObjectID = "95";
+# 95.title
+msgid "Connection:"
+msgstr "Connexion:"
+
+# TRANSLATED : Thu Oct 17 11:31:08 2013
+# TRANSLATOR : SpeakLike 6bbdd9b6-f659-41bd-a5a7-56c7342daae7
+# SENT : Tue Oct 15 17:16:34 2013
+# Context  Class = "NSTextFieldCell"; title = "Sound:"; ObjectID = "104";
+# 104.title
+msgid "Sound:"
+msgstr "Son:"
+
+# TRANSLATED : Thu Oct 17 11:31:08 2013
+# TRANSLATOR : SpeakLike 96cc56c5-611d-4360-be4e-2b56ae0d42d2
+# SENT : Tue Oct 15 17:16:36 2013
+# Context  Class = "NSTextFieldCell"; title = "Appearance:"; ObjectID = "113";
+# 113.title
+msgid "Appearance:"
+msgstr "Apparence:"
+
+# TRANSLATED : Thu Oct 17 11:31:09 2013
+# TRANSLATOR : SpeakLike 6995e034-2784-4036-aa38-0a44112bde85
+# SENT : Tue Oct 15 17:16:42 2013
+# Context  Class = "NSButtonCell"; title = "Launch VyprVPN on startup"; ObjectID = "129";
+# 129.title
+msgid "Launch VyprVPN on startup"
+msgstr "Lancer VyprVPN au démarrage"
+
+# TRANSLATED : Thu Oct 17 11:31:09 2013
+# TRANSLATOR : SpeakLike 18bf8bda-8926-4a9b-8809-244186bfcec7
+# SENT : Tue Oct 15 17:16:49 2013
+# Context  Class = "NSButtonCell"; title = "Connect VyprVPN on application launch"; ObjectID = "143";
+# 143.title
+msgid "Connect VyprVPN on application launch"
+msgstr "Connecter le VyprVPN lors du lancement de l'application"
+
+# TRANSLATED : Thu Oct 17 11:31:09 2013
+# TRANSLATOR : SpeakLike 6366c93e-9e0d-477f-abea-24ff1c68ecdb
+# SENT : Tue Oct 15 17:16:50 2013
+# Context  Class = "NSButtonCell"; title = "Automatically reconnect when disconnected"; ObjectID = "174";
+# 174.title
+msgid "Automatically reconnect when disconnected"
+msgstr "Reconnexion automatique après une déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:31:10 2013
+# TRANSLATOR : SpeakLike be5273a1-6b8e-4805-adb1-4a15d0a63ea1
+# SENT : Tue Oct 15 17:16:51 2013
+# Context  Class = "NSButtonCell"; title = "Connect on unsecured wireless networks"; ObjectID = "211";
+# 211.title
+msgid "Connect on unsecured wireless networks"
+msgstr "Connexion sur des réseaux sans fil non sécurisés"
+
+# TRANSLATED : Thu Oct 17 11:31:10 2013
+# TRANSLATOR : SpeakLike 5e8a2ee3-2cf6-4011-a751-93a228d737e5
+# SENT : Tue Oct 15 17:16:53 2013
+# Context  Class = "NSButtonCell"; title = "Play notification sound on connect"; ObjectID = "266";
+# 266.title
+msgid "Play notification sound on connect"
+msgstr "Lire la notification audio à la connexion"
+
+# TRANSLATED : Thu Oct 17 11:31:10 2013
+# TRANSLATOR : SpeakLike 2f775ff6-de05-4f30-b081-6c9cde52b2a1
+# SENT : Tue Oct 15 17:16:54 2013
+# Context  Class = "NSButtonCell"; title = "Play notification sound on disconnect"; ObjectID = "292";
+# 292.title
+msgid "Play notification sound on disconnect"
+msgstr "Avertissement sonore lors de la déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:31:11 2013
+# TRANSLATOR : SpeakLike d09aa467-621d-44ff-a99d-a1b9bfb67928
+# SENT : Tue Oct 15 17:16:55 2013
+# Context  Class = "NSButtonCell"; title = "Use color menubar icon"; ObjectID = "473";
+# 473.title
+msgid "Use color menubar icon"
+msgstr "Utiliser l’icône de coloration du menu"
+
+# TRANSLATED : Thu Oct 17 11:31:11 2013
+# TRANSLATOR : SpeakLike fc92b4f2-cdde-4064-98c9-976ac99302ed
+# SENT : Tue Oct 15 17:16:57 2013
+# Context  Class = "NSTextFieldCell"; title = "Username:"; ObjectID = "574";
+# 574.title
+msgid "Username:"
+msgstr "Nom d'utilisateur:"
+
+# TRANSLATED : Thu Oct 17 11:31:11 2013
+# TRANSLATOR : SpeakLike f9a69fc5-3a1c-4691-896e-ea2509deb6d4
+# SENT : Tue Oct 15 17:16:58 2013
+# Context  Class = "NSButtonCell"; title = "Log Out"; ObjectID = "605";
+# 605.title
+msgid "Log Out"
+msgstr "Déconnexion"
+
+# TRANSLATED : Thu Oct 17 11:31:12 2013
+# TRANSLATOR : SpeakLike 86c2312f-39e9-4e68-89b4-c0df9accb979
+# SENT : Tue Oct 15 17:16:59 2013
+# Context  Class = "NSMenuItem"; title = "Dock Only"; ObjectID = "760";
+# 760.title
+msgid "Dock Only"
+msgstr "Dock seulement"
+
+# TRANSLATED : Thu Oct 17 11:31:12 2013
+# TRANSLATOR : SpeakLike 56f66e9b-2606-4d74-b30f-68d4821f784c
+# SENT : Tue Oct 15 17:17:01 2013
+# Context  Class = "NSTextFieldCell"; title = "Improve VyprVPN:"; ObjectID = "775";
+# 775.title
+msgid "Improve VyprVPN:"
+msgstr "Améliorer VyprVPN:"
+
+# TRANSLATED : Thu Oct 17 11:31:12 2013
+# TRANSLATOR : SpeakLike a72f3212-0c7c-4b57-9816-422f24e205b6
+# SENT : Tue Oct 15 17:17:02 2013
+# Context  Class = "NSButtonCell"; title = "Share non-personally identifiable app data to help us improve VyprVPN"; ObjectID = "777";
+# 777.title
+msgid "Share non-personally identifiable app data to help us improve VyprVPN"
+msgstr "Partagez vos données d'application non confidentielles pour nous aider à améliorer VyprVPN"
+
+# TRANSLATED : Thu Oct 17 11:31:13 2013
+# TRANSLATOR : SpeakLike 54249f07-09c8-4f55-97a3-5c1dd421673e
+# SENT : Tue Oct 15 17:17:03 2013
+# Context  Class = "NSButtonCell"; title = "PPTP (128 bit encryption)"; ObjectID = "794";
+# 794.title
+msgid "PPTP (128 bit encryption)"
+msgstr "PPTP (encodage 128 bit)"
+
+# TRANSLATED : Thu Oct 17 11:31:13 2013
+# TRANSLATOR : SpeakLike 85b97751-d567-4d80-80af-74f4dbca1042
+# SENT : Tue Oct 15 17:17:05 2013
+# Context  Class = "NSButtonCell"; title = "OpenVPN (160 bit encryption)"; ObjectID = "799";
+# 799.title
+msgid "OpenVPN (160 bit encryption)"
+msgstr "OpenVPN (160 bits de cryptage)"
+
+# TRANSLATED : Thu Oct 17 11:31:14 2013
+# TRANSLATOR : SpeakLike 6a4cad90-f1b6-43b0-ba66-5d0404b27cca
+# SENT : Tue Oct 15 17:17:06 2013
+# Context  Class = "NSButtonCell"; title = "OpenVPN (256 bit encryption)"; ObjectID = "802";
+# 802.title
+msgid "OpenVPN (256 bit encryption)"
+msgstr "OpenVPN (256 bits de cryptage)"
+
+# TRANSLATED : Thu Oct 17 11:31:14 2013
+# TRANSLATOR : SpeakLike 06e61ee8-88f4-4ac4-86b4-4599367b1c4d
+# SENT : Tue Oct 15 17:17:08 2013
+# Context  Class = "NSButtonCell"; title = "L2TP/IPsec (256 bit encryption)"; ObjectID = "809";
+# 809.title
+msgid "L2TP/IPsec (256 bit encryption)"
+msgstr "L2TP/IPsec (encodage 256 bit)"
+
+# TRANSLATED : Thu Oct 17 11:31:14 2013
+# TRANSLATOR : SpeakLike 05e3c987-f27c-4e98-af0e-e57f917f2f1c
+# SENT : Tue Oct 15 17:17:09 2013
+# Context  Class = "NSButtonCell"; title = "Enable connection log"; ObjectID = "817";
+# 817.title
+msgid "Enable connection log"
+msgstr "Autoriser la connexion"
+
+# TRANSLATED : Thu Oct 17 11:31:15 2013
+# TRANSLATOR : SpeakLike 52784c3e-6acc-4158-be70-a65cd50b0bc7
+# SENT : Tue Oct 15 17:17:11 2013
+# Context  Class = "NSButtonCell"; title = "Manage Account Settings..."; ObjectID = "831";
+# 831.title
+msgid "Manage Account Settings..."
+msgstr "Réglages de gestion du compte..."
+
+# TRANSLATED : Thu Oct 17 11:31:15 2013
+# TRANSLATOR : SpeakLike 501bbe59-5524-4003-89ab-d2e84d27b709
+# SENT : Tue Oct 15 17:17:12 2013
+# Context  Class = "NSButtonCell"; title = "Automatically send crash reports"; ObjectID = "865";
+# 865.title
+msgid "Automatically send crash reports"
+msgstr "envoyer automatiquement les rapports de crash"
+
+# TRANSLATED : Thu Oct 17 11:31:15 2013
+# TRANSLATOR : SpeakLike fb8a1b25-8869-4a65-ada0-b5f9d3199741
+# SENT : Tue Oct 15 17:17:18 2013
+# Context  Class = "NSTextFieldCell"; title = "VyprVPN Disconnected"; ObjectID = "69";
+# 69.title
+msgid "VyprVPN Disconnected"
+msgstr "VyprVPN déconnecté"
+
+# TRANSLATED : Thu Oct 17 11:31:16 2013
+# TRANSLATOR : SpeakLike db4e7f92-475d-4d2b-8af8-e6d4e2473d2a
+# SENT : Tue Oct 15 17:17:20 2013
+# Context  Class = "IBBindingConnection"; ibShadowedDisplayPattern = "VyprVPN %{value1}@"; ObjectID = "389";
+# 389.ibShadowedDisplayPattern
+msgid "VyprVPN %{value1}@"
+msgstr "VyprVPN %{value1}@"
+
+# TRANSLATED : Thu Oct 17 11:31:16 2013
+# TRANSLATOR : SpeakLike 06c27d44-a9f6-4da1-b2d2-305be4b3a3ac
+# SENT : Tue Oct 15 17:17:21 2013
+# Context  Class = "NSMenuItem"; title = "Asia"; ObjectID = "75";
+# 75.title
+msgid "Asia"
+msgstr "Asie"
+
+# TRANSLATED : Thu Oct 17 11:31:16 2013
+# TRANSLATOR : SpeakLike 742981de-d68c-40f6-92c6-5c2e978744ef
+# SENT : Tue Oct 15 17:17:22 2013
+# Context  Class = "NSMenuItem"; title = "North America"; ObjectID = "76";
+# 76.title
+msgid "North America"
+msgstr "Amérique du Nord"
+
+# TRANSLATED : Thu Oct 17 11:31:17 2013
+# TRANSLATOR : SpeakLike 82440e2c-4e71-418f-99ce-09ee7d8e7bc8
+# SENT : Tue Oct 15 17:17:24 2013
+# Context  Class = "NSMenuItem"; title = "South America"; ObjectID = "77";
+# 77.title
+msgid "South America"
+msgstr "Amérique du sud"
+
+# TRANSLATED : Thu Oct 17 11:31:17 2013
+# TRANSLATOR : SpeakLike 414e271a-e773-4cbb-8b44-5006316dfc0d
+# SENT : Tue Oct 15 17:17:25 2013
+# Context  Class = "NSMenuItem"; title = "Europe"; ObjectID = "78";
+# 78.title
+msgid "Europe"
+msgstr "Europe"
+
+# TRANSLATED : Thu Oct 17 11:31:17 2013
+# TRANSLATOR : SpeakLike 56b05677-cf3f-424c-8504-eb74cf8a6db4
+# SENT : Tue Oct 15 17:17:26 2013
+# Context  Class = "NSMenuItem"; title = "By Country"; ObjectID = "80";
+# 80.title
+msgid "By Country"
+msgstr "Par pays"
+
+# TRANSLATED : Thu Oct 17 11:31:18 2013
+# TRANSLATOR : SpeakLike cd9cf63a-feb9-45d6-bb19-e6e7c7171a24
+# SENT : Tue Oct 15 17:17:28 2013
+# Context  Class = "NSMenuItem"; title = "By Region"; ObjectID = "81";
+# 81.title
+msgid "By Region"
+msgstr "Par région"
+
+# TRANSLATED : Thu Oct 17 11:31:18 2013
+# TRANSLATOR : SpeakLike 56899c45-eac7-4283-a0f1-717da52d4fbe
+# SENT : Tue Oct 15 17:17:29 2013
+# Context  Class = "NSTextFieldCell"; placeholderString = "Placeholder"; ObjectID = "38";
+# 38.placeholderString
+msgid "Placeholder"
+msgstr "Paramètre fictif"
+
+# TRANSLATED : Thu Oct 17 11:31:23 2013
+# TRANSLATOR : SpeakLike 3c3d975e-01fc-47a8-b172-c470dce38ad7
+# SENT : Tue Oct 15 17:17:31 2013
+# Context  Class = "NSButtonCell"; title = "Attach Connection Log"; ObjectID = "81";
+# 81.title
+msgid "Attach Connection Log"
+msgstr "Inclure archive de connexion"
+
+# TRANSLATED : Thu Oct 17 11:31:24 2013
+# TRANSLATOR : SpeakLike 46670aff-5a77-482a-b048-9e4dac700909
+# SENT : Tue Oct 15 17:17:32 2013
+# Context  Class = "NSTextFieldCell"; title = "Sending..."; ObjectID = "97";
+# 97.title
+msgid "Sending..."
+msgstr "Envoi..."
+
+# TRANSLATED : Thu Oct 17 11:31:24 2013
+# TRANSLATOR : SpeakLike 6f60e2f5-d896-4c32-a446-778766592bfa
+# SENT : Tue Oct 15 17:17:33 2013
+# Context  Class = "NSTextFieldCell"; title = "Email (Optional)"; ObjectID = "105";
+# 105.title
+msgid "Email (Optional)"
+msgstr "Email (Optionnel)"
+

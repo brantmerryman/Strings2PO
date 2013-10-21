@@ -17,6 +17,9 @@
 		8C3ACB051811D01B0089739B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
 		8C3ACB0D1811D01B0089739B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB0B1811D01B0089739B /* InfoPlist.strings */; };
 		8C3ACB101811D01B0089739B /* PO2StringsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */; };
+		8C3ACB19181584F10089739B /* NSDictionary+poFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACB18181584F10089739B /* NSDictionary+poFile.m */; };
+		8C3ACB1B181586C00089739B /* fr-vypr-mac-2.0.po in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB1A181586C00089739B /* fr-vypr-mac-2.0.po */; };
+		8C3ACB1D1815E73B0089739B /* PO2StringsTests in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB1C1815E73B0089739B /* PO2StringsTests */; };
 		8CB8B8DA1808A0D9006BF06E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
 		8CB8B8E41808A0D9006BF06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E21808A0D9006BF06E /* InfoPlist.strings */; };
 		8CB8B8E61808A0D9006BF06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E51808A0D9006BF06E /* main.m */; };
@@ -63,6 +66,10 @@
 		8C3ACB0C1811D01B0089739B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C3ACB0E1811D01B0089739B /* PO2StringsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PO2StringsTests.h; sourceTree = "<group>"; };
 		8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PO2StringsTests.m; sourceTree = "<group>"; };
+		8C3ACB17181584F10089739B /* NSDictionary+poFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+poFile.h"; sourceTree = "<group>"; };
+		8C3ACB18181584F10089739B /* NSDictionary+poFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+poFile.m"; sourceTree = "<group>"; };
+		8C3ACB1A181586C00089739B /* fr-vypr-mac-2.0.po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fr-vypr-mac-2.0.po"; sourceTree = "<group>"; };
+		8C3ACB1C1815E73B0089739B /* PO2StringsTests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PO2StringsTests; sourceTree = "<group>"; };
 		8CB8B8D61808A0D9006BF06E /* Strings2PO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strings2PO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB8B8D91808A0D9006BF06E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8CB8B8DC1808A0D9006BF06E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -129,6 +136,8 @@
 			children = (
 				8C3ACAF81811D01A0089739B /* PO2StringsDelegate.h */,
 				8C3ACAF91811D01A0089739B /* PO2StringsDelegate.m */,
+				8C3ACB17181584F10089739B /* NSDictionary+poFile.h */,
+				8C3ACB18181584F10089739B /* NSDictionary+poFile.m */,
 				8C3ACAFB1811D01A0089739B /* MainMenu.xib */,
 				8C3ACAED1811D01A0089739B /* Supporting Files */,
 			);
@@ -152,6 +161,8 @@
 			children = (
 				8C3ACB0E1811D01B0089739B /* PO2StringsTests.h */,
 				8C3ACB0F1811D01B0089739B /* PO2StringsTests.m */,
+				8C3ACB1A181586C00089739B /* fr-vypr-mac-2.0.po */,
+				8C3ACB1C1815E73B0089739B /* PO2StringsTests */,
 				8C3ACB091811D01B0089739B /* Supporting Files */,
 			);
 			path = PO2StringsTests;
@@ -373,6 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3ACB0D1811D01B0089739B /* InfoPlist.strings in Resources */,
+				8C3ACB1B181586C00089739B /* fr-vypr-mac-2.0.po in Resources */,
+				8C3ACB1D1815E73B0089739B /* PO2StringsTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +445,7 @@
 			files = (
 				8C3ACAF31811D01A0089739B /* main.m in Sources */,
 				8C3ACAFA1811D01A0089739B /* PO2StringsDelegate.m in Sources */,
+				8C3ACB19181584F10089739B /* NSDictionary+poFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +736,7 @@
 				8C3ACB131811D01B0089739B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3ACB141811D01B0089739B /* Build configuration list for PBXNativeTarget "PO2StringsTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +745,7 @@
 				8C3ACB161811D01B0089739B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB8B8D11808A0D9006BF06E /* Build configuration list for PBXProject "Strings2PO" */ = {
 			isa = XCConfigurationList;

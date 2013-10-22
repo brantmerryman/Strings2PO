@@ -10,6 +10,6 @@
 
 @interface NSDictionary (DotStrings)
 
-- (void)writeToStringsFile:(NSString *)filePath;
+- (void)writeToStringsFile:(NSString *)filePath withEncoding:(NSStringEncoding)encoding;
 
 @end

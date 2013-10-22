@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (DotStrings)
 
-- (void)writeToStringsFile:(NSString *)filePath
+- (void)writeToStringsFile:(NSString *)filePath withEncoding:(NSStringEncoding)encoding
 {
     // estimate the capacity needed.
     NSError * err = nil;
@@ -46,7 +46,7 @@
     }
     
     err = nil;
-    [destStr writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&err];
+    [destStr writeToFile:filePath atomically:YES encoding:encoding error:&err];
 
     
 }

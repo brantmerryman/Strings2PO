@@ -255,10 +255,13 @@
     @autoreleasepool {
         
         // determine the max value for the translations.
-        NSError * err = nil;
+        
         NSUInteger currentProgress = 0;
         
         NSUInteger totalTranslations = 0;
+        
+        BOOL overwriteAll = NO;
+        
         for (id key in [poNumberOfTranslationsPerFile allKeys]) {
             totalTranslations += [[poNumberOfTranslationsPerFile objectForKey:key] unsignedIntegerValue];
         }
@@ -274,6 +277,17 @@
         // translate each file
         for (id key in poFiles) {
             
+            
+            NSStringEncoding encoding = NSUTF8StringEncoding;
+            
+            NSError * err = nil;
+            [NSString stringWithContentsOfFile:key usedEncoding:&encoding error:&err];
+            
+            if (err) {
+                NSLog(@"Failed to get file encoding for po file.");
+            }
+
+            
             dispatch_sync(dispatch_get_main_queue(), ^{
                 [translationProgress setDoubleValue:currentProgress];
             });
@@ -285,7 +299,7 @@
             NSString * localization = [poLocalizations objectForKey:key];
             // now get each string file.
             
-            NSString * localizationFolder = [destPath stringByAppendingPathComponent:localization];
+            NSString * localizationFolder = [[destPath stringByAppendingPathComponent:localization] stringByAppendingPathExtension:@"lproj"];
             
             BOOL folder;
             
@@ -308,17 +322,38 @@
             NSDictionary * podict = [NSDictionary dictionaryWithContentsOfPOFile:key];
             
             for (id stringFilePath in stringsFiles) {
+                
+                
                 NSString * stringFileName = [[stringFilePath pathComponents] lastObject];
                 NSString * stringFileFullPath = [localizationFolder stringByAppendingPathComponent: stringFileName];
                 NSDictionary * strDict = [NSDictionary dictionaryWithContentsOfFile:stringFilePath];
                 
-                if ([[NSFileManager defaultManager] fileExistsAtPath:stringFileFullPath]) {
-                    NSLog(@"Destination file exists - skipping. %@", stringFileFullPath);
-                    currentProgress += strDict.count;
+                if ([[NSFileManager defaultManager] fileExistsAtPath:stringFileFullPath] && !overwriteAll) {
+                    
+                    NSArray * comps = [stringFileFullPath pathComponents];
+                    NSAssert(comps.count > 2, @"Logic error");
+                    NSString * userLocalizedDestName = [[comps objectAtIndex:comps.count -2] stringByAppendingPathComponent: [comps lastObject]];
+                    
+                    __block NSInteger modalResult;
+                    
                     dispatch_sync(dispatch_get_main_queue(), ^{
-                        [translationProgress setDoubleValue:currentProgress];
+                        NSAlert * overwriteAlert = [NSAlert alertWithMessageText:NSLocalizedString(@"Overwrite existing file?", @"alert title") defaultButton:NSLocalizedString(@"Skip", @"button") alternateButton:NSLocalizedString(@"Overwrite", @"button") otherButton:NSLocalizedString(@"Overwrite All", @"button") informativeTextWithFormat:@"Are you sure you want to overwrite the file: %@",  userLocalizedDestName];
+                    
+                        modalResult = [overwriteAlert runModal];
                     });
-                    continue;
+                    
+                    if (1 == modalResult) {
+                    
+                    
+                        NSLog(@"Destination file exists - skipping. %@", stringFileFullPath);
+                        currentProgress += strDict.count;
+                        dispatch_sync(dispatch_get_main_queue(), ^{
+                            [translationProgress setDoubleValue:currentProgress];
+                        });
+                        continue;
+                    } else if (-1 == modalResult) {
+                        overwriteAll = YES;
+                    }
                 }
                 
                 NSMutableDictionary * destDict = [NSMutableDictionary dictionaryWithCapacity:strDict.count];
@@ -331,6 +366,8 @@
                     
                     if (translation) {
                         [destDict setObject:translation forKey:stringKey];
+                    } else {
+                        [destDict setObject:englishString forKey:stringKey];
                     }
                     ++currentProgress;
                     dispatch_sync(dispatch_get_main_queue(), ^{
@@ -340,7 +377,7 @@
                 
                 // now write the destination file
 //                NSLog(@"Writing strings file: %@", stringFileFullPath);
-                [destDict writeToStringsFile:stringFileFullPath];
+                [destDict writeToStringsFile:stringFileFullPath withEncoding: encoding];
                 
                 if (cancel)
                     break;

@@ -8,6 +8,7 @@
 
 #import "PO2StringsDelegate.h"
 #import "NSDictionary+poFile.h"
+#import "NSDictionary+DotStrings.h"
 
 @implementation PO2StringsDelegate
 
@@ -18,9 +19,46 @@
     poFiles = [NSMutableArray arrayWithCapacity:100];
     poLocalizations = [NSMutableDictionary dictionaryWithCapacity:100];
     poNumberOfTranslationsPerFile = [NSMutableDictionary dictionaryWithCapacity:100];
-
+    
+    
+    id dstrfs = [[NSUserDefaults standardUserDefaults] arrayForKey:@"stringsFiles"];
+    if ([dstrfs isKindOfClass:[NSArray class]]) {
+        stringsFiles = [dstrfs mutableCopy];
+        
+        [stringsTable reloadData];
+    }
+    
+    id pfs = [[NSUserDefaults standardUserDefaults] arrayForKey:@"poFiles"];
+    if ([pfs isKindOfClass:[NSArray class]]) {
+        poFiles = [pfs mutableCopy];
+        
+        [poTable reloadData];
+    }
+    
+    id pol = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"poLocalizations"];
+    if ([pol isKindOfClass:[NSDictionary class]]) {
+        poLocalizations = [pol mutableCopy];
+    }
+    
+    id pnt = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"poNumberOfTranslationsPerFile"];
+    if ([pnt isKindOfClass:[NSDictionary class]]) {
+        poNumberOfTranslationsPerFile = [pnt mutableCopy];
+    }
+    
+    stringsTable.allowsMultipleSelection = YES;
+    poTable.allowsMultipleSelection = YES;
+    
 }
 
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    [[NSUserDefaults standardUserDefaults] setObject:stringsFiles forKey:@"stringsFiles"];
+    [[NSUserDefaults standardUserDefaults] setObject:poFiles forKey:@"poFiles"];
+    [[NSUserDefaults standardUserDefaults] setObject:poLocalizations forKey:@"poLocalizations"];
+    [[NSUserDefaults standardUserDefaults] setObject:poNumberOfTranslationsPerFile forKey:@"poNumberOfTranslationsPerFile"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 - (void)processItem:(NSString *)filePath
 {
@@ -301,8 +339,8 @@
                 }
                 
                 // now write the destination file
-                NSLog(@"Writing strings file: %@", stringFileFullPath);
-                [strDict writeToFile:stringFileFullPath atomically:YES];
+//                NSLog(@"Writing strings file: %@", stringFileFullPath);
+                [destDict writeToStringsFile:stringFileFullPath];
                 
                 if (cancel)
                     break;

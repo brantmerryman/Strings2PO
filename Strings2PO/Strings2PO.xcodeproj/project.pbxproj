@@ -20,6 +20,7 @@
 		8C3ACB19181584F10089739B /* NSDictionary+poFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACB18181584F10089739B /* NSDictionary+poFile.m */; };
 		8C3ACB1B181586C00089739B /* fr-vypr-mac-2.0.po in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB1A181586C00089739B /* fr-vypr-mac-2.0.po */; };
 		8C3ACB1D1815E73B0089739B /* PO2StringsTests in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACB1C1815E73B0089739B /* PO2StringsTests */; };
+		8C3ACB201816D90C0089739B /* NSDictionary+DotStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACB1F1816D90C0089739B /* NSDictionary+DotStrings.m */; };
 		8CB8B8DA1808A0D9006BF06E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB8B8D91808A0D9006BF06E /* Cocoa.framework */; };
 		8CB8B8E41808A0D9006BF06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E21808A0D9006BF06E /* InfoPlist.strings */; };
 		8CB8B8E61808A0D9006BF06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8B8E51808A0D9006BF06E /* main.m */; };
@@ -70,6 +71,8 @@
 		8C3ACB18181584F10089739B /* NSDictionary+poFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+poFile.m"; sourceTree = "<group>"; };
 		8C3ACB1A181586C00089739B /* fr-vypr-mac-2.0.po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fr-vypr-mac-2.0.po"; sourceTree = "<group>"; };
 		8C3ACB1C1815E73B0089739B /* PO2StringsTests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PO2StringsTests; sourceTree = "<group>"; };
+		8C3ACB1E1816D90B0089739B /* NSDictionary+DotStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DotStrings.h"; sourceTree = "<group>"; };
+		8C3ACB1F1816D90C0089739B /* NSDictionary+DotStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DotStrings.m"; sourceTree = "<group>"; };
 		8CB8B8D61808A0D9006BF06E /* Strings2PO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strings2PO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB8B8D91808A0D9006BF06E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8CB8B8DC1808A0D9006BF06E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				8C3ACAF91811D01A0089739B /* PO2StringsDelegate.m */,
 				8C3ACB17181584F10089739B /* NSDictionary+poFile.h */,
 				8C3ACB18181584F10089739B /* NSDictionary+poFile.m */,
+				8C3ACB1E1816D90B0089739B /* NSDictionary+DotStrings.h */,
+				8C3ACB1F1816D90C0089739B /* NSDictionary+DotStrings.m */,
 				8C3ACAFB1811D01A0089739B /* MainMenu.xib */,
 				8C3ACAED1811D01A0089739B /* Supporting Files */,
 			);
@@ -446,6 +451,7 @@
 				8C3ACAF31811D01A0089739B /* main.m in Sources */,
 				8C3ACAFA1811D01A0089739B /* PO2StringsDelegate.m in Sources */,
 				8C3ACB19181584F10089739B /* NSDictionary+poFile.m in Sources */,
+				8C3ACB201816D90C0089739B /* NSDictionary+DotStrings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

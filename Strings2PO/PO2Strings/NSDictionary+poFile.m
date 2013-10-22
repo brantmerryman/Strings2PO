@@ -29,7 +29,7 @@
     for (NSRange r = [contents rangeOfString:@"msgid"];NSNotFound != r.location; r = [contents rangeOfString:@"msgid" options:0 range:NSMakeRange(r.location + r.length, contents.length - (r.location + r.length))]) {
         
         
-        NSLog(@"msgid: %lu", r.location);
+
         
         // find start quote
         BOOL ignoreQuote = NO;
@@ -75,7 +75,7 @@
                     break;
                     
                 case '\\':
-                    iEndQuote = YES;
+                    ignoreQuote = YES;
                     break;
                 case '\n':
                     NSLog(@"Error at %lu", i);
@@ -88,13 +88,13 @@
         }
         
         if ('"' != [contents characterAtIndex:iEndQuote]) {
-            NSLog(@"Could not find end quote");
+            NSLog(@"Could not find end quote for msgID. file:%@ Start: %lu End: %lu %@", [[filePath pathComponents] lastObject], iStartQuote, iEndQuote, [contents substringWithRange:NSMakeRange(iStartQuote+1, iEndQuote - (iStartQuote +1))]);
             continue;
         }
         // should be able to get the msgid contents now.
         len = iEndQuote - (iStartQuote +1);
         NSString * msgid_contents = [contents substringWithRange:NSMakeRange(iStartQuote+1, len)];
-        NSLog(@"Start: %lu End: %lu length: %lu msgid contents: %@", iStartQuote, iEndQuote, len, msgid_contents);
+//        NSLog(@"Start: %lu End: %lu length: %lu msgid contents: %@", iStartQuote, iEndQuote, len, msgid_contents);
 
         // find the msgstr
         
@@ -102,7 +102,7 @@
         
 
         
-        NSLog(@"msgstr: %lu", r.location);
+//        NSLog(@"msgstr: %lu", r.location);
 
         
         // find start quote
@@ -149,7 +149,7 @@
                     break;
                     
                 case '\\':
-                    iEndQuote = YES;
+                    ignoreQuote = YES;
                     break;
                 case '\n':
                     NSLog(@"Error at %lu", i);
@@ -162,14 +162,14 @@
         }
         
         if ('"' != [contents characterAtIndex:iEndQuote]) {
-            NSLog(@"Could not find end quote");
+            NSLog(@"Could not find end quote for msgstr (%@). file:%@ Start: %lu End: %lu %@", msgid_contents, [[filePath pathComponents] lastObject], iStartQuote, iEndQuote, (iEndQuote > iStartQuote) ? [contents substringWithRange:NSMakeRange(iStartQuote+1, iEndQuote - (iStartQuote +1))] : @"Invalid String");
             continue;
         }
         
         len = iEndQuote - (iStartQuote +1);
         NSString * msgstr_contents = [contents substringWithRange:NSMakeRange(iStartQuote+1, len)];
 
-        NSLog(@"Start: %lu End: %lu len: %lu msgstr contents: %@", iStartQuote, iEndQuote, len, msgstr_contents);
+//        NSLog(@"Start: %lu End: %lu len: %lu msgstr contents: %@", iStartQuote, iEndQuote, len, msgstr_contents);
         
         [interResult setObject:msgstr_contents forKey:msgid_contents];
     }
